@@ -17,6 +17,11 @@ header{
     border-width: 1px 1px 0 1px; 
     font-weight: bold;
 }
+figure#logo {
+    margin-top:10px;
+    margin-right: 10px;
+} 
+
 article{
     
     margin: 0 auto;
