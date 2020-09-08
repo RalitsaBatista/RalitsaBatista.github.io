@@ -1,0 +1,143 @@
+html {
+    size: 62.5%;
+}
+body {
+    padding: 20px;
+    height: 100%;
+    max-width: 100%;
+}
+header{
+    margin: 0 auto;
+    font-family: helvetica;
+    background-color: #701144; 
+    padding: 0.5px;  
+    border-radius: 10px 10px 0 0; 
+    color: #fbdfd1;
+    border: 1px solid #701144;
+    border-width: 1px 1px 0 1px; 
+    font-weight: bold;
+}
+article{
+    
+    margin: 0 auto;
+    border: 1px solid #701144;
+    border-width: 0 1px 0 1px ; 
+    border-radius: 10px 10px 0 0; 
+}
+footer{
+    
+    margin: 0 auto;
+    color: #fbdfd1;
+    background-color: #701144;
+    border: 1px solid #701144;
+    border-width: 0 1px 1px 1px; 
+    border-radius: 0 0 10px 10px;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+.footer-p {
+    background-color: #69013B;
+    font-size: 1.4rem;
+    padding: 0.7px;
+    color: #fbdfd1;
+    font-style: italic;
+    border-radius: 5px 5px 0 0;
+}
+#logo img {
+    width: 120px;
+    height: 70px;
+    float: right;
+}
+p {
+    font-size: 1.5rem;
+    padding: 0.8rem;
+}
+
+h1, h2, h3 {
+    line-height: 30px;  
+    padding: 0.5rem;   
+    font-family: helvetica, sans-serif;
+}
+h1 {
+    font-size: inherit;
+    font-weight: bold;  
+}
+h2 {
+    
+    font-weight: bold;
+    padding: 0.5rem;
+    font-size: inherit;
+
+}
+h3{
+    
+    font-style: italic;
+    font-weight:bold;
+    font-size: inherit;
+}
+a{
+    color: #69013B;
+    font-style: italic;
+    font-size: 16px;
+}
+footer a {
+    font-style: italic;
+    color: #fbdfd1;
+}
+.class1 {
+    padding-left: 2rem;
+    font-weight: bold;
+}
+
+.sisennys-2rem {
+    padding-left: 2rem;
+}
+.sisennys-4rem {
+    padding-left: 4rem;
+    font-style: italic;
+    font-size: 2rem;
+}
+.sisennys-8rem {
+    padding-left: 8rem;    
+}
+
+article ol{
+    list-style: decimal;
+    color: #69013B;      
+}
+.hidden {
+    display: none;
+}
+/*tabletti*/
+@media screen and (max-width: 426px) {
+    
+    #main, #subnav {
+        float: left;
+        padding: 0;
+        width: 94%;
+        margin: 3%;
+    }
+    #subnav {
+        border-right: 1px dotted #aaa;
+        border-bottom: 1px dotted #aaa;
+    }
+    #logo {
+        font-size: 45px;
+    }
+    #menu {
+        text-align: center;
+        padding: 0;
+    }
+    #menu li{
+        display: inline-block;
+        margin: 1.25% .5% 1.25% .5%;
+        border-left: 0;
+        padding: 1%;
+        border: 1px solid white; 
+    }
+    #menu li a {
+        color: white;
+        text-decoration: none;
+    }
+/*desktop*/
+}

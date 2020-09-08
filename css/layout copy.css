@@ -1,0 +1,96 @@
+html {
+    font-size: 62.5%
+}
+
+body {
+    max-width: 100%;
+    padding: 1px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0rem;
+
+}
+
+header {
+    background-color: #69013B;
+    color: white;
+    font-weight: bold;
+    border: solid color #69013B 1px;
+    border-width: 0 1px 0 1px;
+    border-radius: 20px 20px 0 0;
+    padding: 1rem;
+}
+
+.ops {
+    border: solid #69013B 1px;
+}
+
+.footer-p {
+    background-color: #69013B;
+    font-size: 1.4rem;
+    padding: 0.7px;
+    color: white;
+    font-style: italic;
+    border-radius: 5px 5px 0 0;
+}
+
+#logo {
+    float:right;
+    width: 10rem;
+    padding: 1rem;
+}
+
+#logo img {
+    max-width: 100%;
+}
+
+p {
+    font-size: 1.5rem;
+    padding: 0.8rem;
+}
+
+h1, h2, h3 { 
+    font-weight: bold; 
+    padding: 1rem;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+h1 {
+    font-weight: bolder;
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-weight: bolder;
+    font-size: 2rem;
+    
+}
+
+h3 {
+    font-size: 2rem;
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+    color: #69013B;
+    cursor: pointer;
+    font-style: italic;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    background-color: #69013B;
+    color: #69013B;
+    padding: 1rem;
+ }
+
+figure img {
+ max-width: 100%; 
+}
+figcaption {
+ font-style: italic;   
+}
+
+body > * {
+    margin-bottom: 1rem;
+}

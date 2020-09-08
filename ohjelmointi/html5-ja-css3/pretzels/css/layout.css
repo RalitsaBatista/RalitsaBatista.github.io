@@ -1,0 +1,122 @@
+html{
+    font-size: 62,5%
+}
+body{
+    width: 960px;
+}
+#special {
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    font-family: sans-serif;
+    background-color: #5F8288;
+    background-image: url("../img/special-bg.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    color: #e0d5d5;
+    background-attachment: fixed; 
+}
+ 
+#wrapper {
+    font-family: 'Times New Roman', Times, serif ;
+    font-size: 16px;
+    background-repeat: repeat-x;
+    background-image: url(../img/grunge.png);
+    background-color: #f0e3ca;
+    background-attachment: fixed;
+    box-sizing: border-box;  
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+}
+#logo img{
+    display: block;
+}
+.ul1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    border-bottom: solid rgba(184, 170, 124, 0.829);
+    width: 100%;
+}
+.ul1 > * {
+    flex: 1;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+#main {
+    box-sizing: border-box; 
+    float:left;
+    width: 60%;
+    height: auto;
+    padding: 10px;
+    margin: 5px;  
+    font-size:16px;     
+}
+
+#main #pretzels img{
+    padding: 5px 0 5px 0;
+    border-radius: 5px;
+    max-width: 100%;
+    height: auto;
+}
+#sidebar{
+    box-sizing: border-box;
+    float: left;
+    width: 33%;
+    padding: 10px;
+    margin: 5px;
+    height: auto;
+    
+}
+
+.callout{
+    background-color: #ecd392;
+    border-radius: 8px;
+    font-size: 16px;
+    text-align: center;
+    width:33%;
+    float: right top;
+    
+}
+.our-pretzels{
+    column-count: 2; 
+    column-gap:20px;
+    column-fill:auto;
+    list-style:none;
+}
+
+footer{
+    background-color: #f0e3ca ;
+    color: #C8C3BE;
+    clear: both;
+    width: 960px;
+    text-align: center;
+    padding: 30px;
+}
+footer figure img {
+    opacity: 0.3;
+    display: block;
+    max-width: 100%;
+    padding: 20px 450px 5px 450px;
+    margin: 0px;
+  
+}
+
+
+/*mobile*/
+@media screen and (max-width:550px) {
+    
+}
+/*tablet*/
+@media screen and (min-width:551px) and (max-width: 880px) {
+    #main {
+        flex-basis: 100%;
+    }
+    #sidebar {
+        flex-basis: 100%;
+    }
+    
+}

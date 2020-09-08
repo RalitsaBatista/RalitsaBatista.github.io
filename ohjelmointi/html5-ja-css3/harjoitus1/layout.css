@@ -1,0 +1,72 @@
+html {
+font.size: 62,5%;
+}
+body {
+	padding: 10px;	
+}
+section {
+	background-color: #BBDDEE;
+	margin-bottom: 10px;
+	padding: 10px
+}
+h1{
+font-size: 2rem;
+margin-bottom: 10px;
+font-weight: bold;
+}
+h2{
+font-size: 1.8rem;
+margin-bottom: 10px;
+font-weight: bold;	
+}
+
+h3{
+font-size: 1.6rem;
+margin-bottom: 10px;
+font-weight: bold;	
+}
+ol {
+	list-style: decimal;
+}
+ul {
+	list-style: disc;
+	margin-left: 3rem;
+	margin-bottom: 10px;
+}
+ul li{
+    font-size: 1.4rem
+	margin-bottom: 5px;	
+}
+
+p {
+	font-size: 1.4rem
+	margin-bottom: 10px;
+}
+pre{
+	font-size: 1.4rem
+	font-family: "Courier New", Courier, monospace
+}
+
+#toka h2, #kolmas h2 {
+	background-color: #88AABB;
+	text-align: right;
+	padding: 10px;
+	text-transform:lowercase;
+	
+}
+		
+.iso-q {
+	float: left;
+	font-size: 500%;
+	width: 1.2em; /*1,2 x 50px = 60px*/
+	text-align: center;
+	padding: 0.1em 0.1em 0;
+	background: #568;
+	color: white;
+	border: solid white 1px; 
+	border-width: 0 0.2em 0.2em 0;
+	margin: -10px 0.5em 0.2em -10px;		
+}
+.bannerikuva img {
+		max-width: 100%;
+}

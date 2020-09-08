@@ -1,0 +1,316 @@
+html{
+    font-size: 62.5%
+}
+body{
+    font-family: Arial, verdana, serif;
+    max-width: 100% ; 
+    
+}
+#container {
+    background-color: #84C158; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#container > * {
+    flex-grow: 1;
+    flex-basis:100%;
+}
+#logo img{
+    
+    max-width: 100%;
+    background-color: #84C158;
+}
+#vision {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #84C158;
+    justify-content: center;
+    align-items: center;
+    border-width: 10px 0 10px 0;
+}
+.nav{
+    flex-grow: 1;
+    flex-direction: column;
+    background-color: #84C158;
+    font-size: 16px; 
+    flex-basis: 100%;
+    text-align: center;
+
+}
+.nav ol {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.nav ol li{
+    flex-grow: 1;
+    flex-basis: 100%;
+    border: 2px solid #82b74b;
+    margin: 0px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #a6c987;
+    color:white;
+    padding: 10px 0;
+}
+
+.p1 {
+    font-size: 16px;
+    padding: 0.8em 0.8em 0.5em 0.5em; 
+}
+
+#vision figure {
+    display: none;
+}
+#boxes {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: solid white 2px;
+    margin-bottom: 5px;
+    border-width: 10px 10px 0px 0px;
+    flex-basis:auto;   
+}
+
+#boxes #specials {
+    margin-top: 1 rem;
+    background-color: rgba(218, 214, 214, 0.938);
+    padding: 5px;
+}
+
+#boxes #specials .p2 {
+    font-size: 16px;
+    padding: 5px; 
+    flex-grow: 1;
+    flex-basis: 0;
+}
+    
+#boxes #specials img{
+    flex-grow: 1;
+    min-width: 100%;
+    width:  300px;
+    height: 200px;
+    border: white solid 5px;
+    padding: 0px;
+    background-repeat: 100%;
+}
+#boxes #events h1 {
+    font-size: 100%;
+    margin-top: 1rem;
+    background-color: rgba(218, 214, 214, 0.938);
+    padding: 5px;
+    border: white solid 5px;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+#boxes #events img{
+    border: solid white 5px;
+    padding: 0px;
+    flex-grow: 1;
+    max-width:100%;
+}
+
+#boxes #news {
+    margin-top: 1rem; 
+    border: white solid 5px;
+    font-size: 16px;
+    padding: 0; 
+    flex-grow: 1;
+    flex-basis: 0;
+}
+#boxes #news h1{
+    background-color: rgba(218, 214, 214, 0.938);
+    font-size: 16px;
+    padding: 5px; 
+    flex-grow: 1;
+    flex-basis: 100%;   
+}
+#wrapper {
+    display: flex;
+    background-color: white;
+    border: white solid 1px;
+    flex: 100%;
+    flex-grow: 1;
+    width: 100%;
+    margin: 0 0 0 0;
+    font-size: 10px;
+    padding-bottom: 10px;
+}
+.dates{
+    flex: 30%;
+    flex-basis: auto;
+    flex-direction: row;
+    text-align: left;  
+    width: 30%;
+}
+.news-events {
+    flex: 70%;
+    flex-direction: row;
+    width: 70%;  
+    text-align: center; 
+    flex-basis: auto;   
+    
+}
+footer{
+    margin: 0 10px 0 0;
+    background-color: #84C158;
+    display: 100%;
+    font-size: 10px;
+    padding: 20px;  
+}
+footer p {
+    text-align: left;
+    font-size: 12px;
+    margin: 0 10px 0 5px;
+    color: white;
+}
+
+footer .fab {
+    font-family: "Font Awesome 5 Brands";
+    font-size: 10px;
+    width: 10px;
+    text-align: right;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+footer .facebook, footer .twitter{
+    float: right;
+}
+.fab-facebook-square {
+    background: white;
+    color: gray;
+    padding: 5px;
+    margin-right: auto ;
+    position: absolute;
+    right: 15px;
+    text-decoration: none;
+    
+}
+.fab-twitter-square {
+    background: white;
+    color: gray;
+    padding: 5px;
+    margin: 5px 0;
+    position: absolute;
+    right: 0px;
+}
+  
+
+
+/*tabletti*/
+@media screen and (min-width: 426px) {
+    #logo img {
+        position: top left;
+        max-width: 50%;
+    }
+    #vision {
+        display: flex;
+        flex-flow: row-reverse wrap;
+        /*flex-direction: row ;
+        flex-wrap: nowrap;*/
+        background-color: #84C158;
+        background-repeat: repeat-x repeat-y;
+        justify-content: center;
+        align-items:center;
+        border: solid white 10px;
+        border-width: 10px 0 10px 0;
+    
+    }
+    #vision .p1 {
+        font-size:14px;
+        max-width: 50%;
+        float: left;
+
+    }
+    #vision img{
+        display: inline;
+        max-width: 50%;
+        border: solid white 5px;
+        margin: 2px;
+        flex-grow: 1;
+        flex-basis: 0;
+        position: right;
+    }
+
+    .nav ol{
+       min-width: 425spx;
+       display: inline;
+    }
+    .nav li{
+        display: inline;
+        padding: 5px;
+        margin: 0px;
+    }
+    
+    #vision section {
+        flex-grow: 2;
+        padding: 1rem;
+        font-size: 1.8rem;
+        flex-basis: 0;
+        background-color: rgb(229, 229, 155);
+    }
+    
+    #vision img{
+        border-bottom: white solid 5px;
+        max-width: 50%;
+        flex-grow: 1;
+        flex-basis: 0;
+    }
+    #vision .vision-teksti{
+        flex-grow: 2;
+    }
+    figure img {
+        max-width: 100%;
+        
+    }
+    #specials{
+    margin-top: 1 rem;
+    }
+    #boxes{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        flex-grow: 1;
+        flex-basis:0;
+        text-align: center;
+    }
+    .news1 {
+        flex-basis: 100%;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #specials{
+        flex-basis: 0;
+        flex-grow: 1;
+        border-width: 0.8rem 0 0.8rem 0.8rem;
+    }
+    #events{
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+    
+}
+
+/*desktop*/
+@media screen and(min-width: 725px) {
+ #vision{
+     border: solid white 10px;
+     border-width: 10px 0 10px 0;
+     font-size: 20px;
+ }
+ #news {
+     flex-basis: 0;
+ }
+ #news > * {
+    padding: 5px;
+}
+ #nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+}

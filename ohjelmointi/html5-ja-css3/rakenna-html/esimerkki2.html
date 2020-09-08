@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, iunitial-scale-1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        #osa1 {
+            padding:10px;
+            font-size: 1.6rem;
+        }
+        .p1{
+            padding: 10px;
+        }
+        .p2{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+<section id="malli">
+    <p class="p1">This is paragraph</p>
+    <p class="p2">This is anotherparagraph</p>
+</section>
+
+<script>
+    // annetaan bodylle id "runko"
+    document.body.id += "runko";
+
+    //esittellään muuttujat 
+    var runko = document.getElementById("runko");
+    var section = document.createElement("section");
+    var p1 = document.createElement("p");
+    var p2 = document.createElement("p");
+    var text1 = document.createTextNode("This is a paragraph");
+    var text2 = document.createTextNode("This is another paragraph");
+    var p3 = document.createElement("p");
+    var text3 = document.createTextNode("This is a third paragraph");
+
+    //nimetään html elementit
+    section.id = "osa1";
+    p1.className = "p1";
+    p2.className = "p2";
+    p3.className = "p3";
+    
+
+    //lisätään p-sisällöt
+    p1.appendChild(text1);
+    p2.appendChild(text2);
+    p3.appendChild(text3);
+
+    //lisätään p-elemntit sectionin sisään
+    section.appendChild(p1);
+    section.appendChild(p2);
+    section.appendChild(p3);
+    //sijoitetaan html-elementit bodyn sisään
+    runko.appendChild(section);
+
+</script>
+
+</body>
+
+</html>
