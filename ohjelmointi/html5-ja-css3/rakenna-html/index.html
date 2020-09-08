@@ -13,12 +13,10 @@
             width: 750px;
             margin: auto;
             margin-top:20px;
-            border:1px dimgray;
-            border-style: dashed;
             font-size: 1.5rem;
         }
-        #runko > *{
-            border: dashed black 1px;
+        #main {
+            border: 1px dashed gray;
         }
         
         #otsikko{
@@ -45,10 +43,10 @@
         #rinnakkain{
             display: flex;
             flex-direction:row;
-            flex-wrap: nowrap;
-            border: dimgray;
-            border-style: dashed;
-            border-width: 1px 0px;
+            flex-wrap: wrap;
+            border: 1px dashed gray;
+            border-width: 1px 0;
+
         }
         #rinnakkain > * {
             flex-basis:auto;
@@ -56,8 +54,8 @@
             flex-basis: 0px;
             flex-grow: 1;
             box-sizing: border-box;
-}
         }
+        
         #rinnakkain figure img {
             width: 100%;
             box-sizing: border-box;
@@ -65,84 +63,66 @@
         } 
     </style>
 </head>
-<!--This is a comment. Comments are not displayed in the browser
-<body id="runko">
-    <header slass="ylatunniste">
-        <h1>Tämä on artikkelin otsikko</h1>
-        <p>Ensimmäinen on kapple Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam culpa provident quod animi ad eveniet corporis expedita iste consequuntur illum.</p>
-    </header>
-    <section id="rinnakkain">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem temporibus ad voluptatem illo quo velit, quis saepe architecto doloremque obcaecati quisquam nesciunt ullam ipsum, rerum odit blanditiis libero, nam vero?</p>
-            <figure id="kyvanpaikka"><img src="img/img12.png"></figure>
- 
-    </section>
-    <footer>
-        <p>@ 2020 Batista</p>
-    </footer>
--->
+<body>
        
     <script type="text/javascript">
-          document.body.id += "runko";
+        document.body.id = "runko";
+        var bodyEl = document.getElementById('runko');
 
-        //muuttujien esittely
-        var runko = document.getElementById("ylätunniste");
-        var ylatunniste = document.createElement("header");
-        var rinnakkain = document.createElement("rinnakain");
-        var section = document.createElement("section");
-        var figure = document.createElement("figure");
+        var main = document.createElement("div");
+        main.id = "main";
+
+        /* Start header */
+        var header = document.createElement("header");
+        header.className = "ylatunniste ";
+        var header_h1 = document.createElement("h1");
+        var header_p = document.createElement("p");
+        var header_h1_text = document.createTextNode("Tämä on artikkelen otsikko");
+        var header_p_text = document.createTextNode("Ensimmäinen kappale. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ");
+
+        header_h1.appendChild(header_h1_text);
+        header_p.appendChild(header_p_text);
+
+        header.appendChild(header_h1);
+        header.appendChild(header_p);
+        /* End header */        
+
+        /* Start middle div */
+        var middle = document.createElement("div");
+        middle.id = "rinnakkain";
+        var middle_p = document.createElement("p");
+        var middle_p_text = document.createTextNode("Ensimmäinen kappale. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ");
+        middle_p.appendChild(middle_p_text);
+
+        var middle_figure = document.createElement("figure");
+        middle_figure.id = "kuvanpaikka";
+        var middle_figure_img = document.createElement("img");
+        middle_figure_img.src = "img/img12.png";
+        middle_figure_img.alt = "kuvanpaikka image";
+        middle_figure.appendChild(middle_figure_img);
+
+        middle.appendChild(middle_p);
+        middle.appendChild(middle_figure);
+        /* End middle div */
+
+        /* Start footer div */
+
         var footer = document.createElement("footer");
+        var footer_p = document.createElement("p");
+        footer_p.innerHTML = "&copy; 2020 Ralitsa Batista";
+        //var footer_p_text = document.createTextNode("&copy; 2020 Ralitsa Batista");
+        //footer_p.appendChild(footer_p_text);
+        footer.appendChild(footer_p);
+        
+        /* End footer div */
 
-        var h1 = document.createElement("h1");
-        var p1 = document.createElement("p");
-        var p2 = document.createElement("p");
-        var p3 = document.createElement("p");
+        
+        main.appendChild(header);
+        main.appendChild(middle);
+        main.appendChild(footer);
 
-        //text element
-        var otsikko = document.createTextNode("Tämä on artikkelien otsikko");
-        var text1 = document.createTextNode("Ensimmäinen kappale! Lorem");
-        var text2 = document.createTextNode("Toka kappale! Lorem ipsum");
-        var text3 = document.createTextNode("@ 2020 Batista");
+        bodyEl.appendChild(main);
 
-        //html-elements
-        ylatunniste.className = "ylatunniste";
-        section.id = "rinnakkain";
-        h1.className = "h1";
-        p1.className = "p1";
-        p2.className = "p2";
-        p3.className = "p3";
-        figure.id = "kuvanpaikka";
-
-        //lisätään h1 ja p-sisällöt
-        h1.appendChild(otsikko);
-        p1.appendChild(text1);
-        p2.appendChild(text2);
-        p3.appendChild(text3);
-
-        //lisätään p-elemnttien section sisään
-        section.appendChild(p2);
-
-        //lisätään p-elementit bodyn sisään
-        footer.appendChild(p3);
-
-        //sijoitetaan html elementit bodyn sisään
-        runko.appendChild(section); 
-         //runko.appendChild(ylatunniste);
-         //runko.appendChild(rinnakkain);  
-         //runko.appendChild(figure);
-         //runko.appendChild(footer);     
-
-
-
-
-
-
-
-     //   var para = document.createElement("p");
-      //  var node = document.createElement("This is new.");
-      //  para.appendChild(node);
-
-        //var element =document.getElementById("div1");
-        //element.appendChild(para);
     </script>
 
 </body>
