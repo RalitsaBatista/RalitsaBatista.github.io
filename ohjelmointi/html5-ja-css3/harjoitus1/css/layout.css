@@ -1,15 +1,76 @@
 html {
-font.size: 62,5%;
+	font-size: 62,5%;
 }
 body {
-	padding: 10px;	
+	padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: auto;
+    margin-right: auto;
+	max-width: 80rem;
+	background:white; 
+	color: black;
+}
+.bannerikuva img {
+	max-width: 100%;
 }
 section {
 	background-color: #BBDDEE;
 	margin-bottom: 10px;
-	padding: 10px
+	padding: 10px;	
 }
-h1{
+.iso-q {
+	float: left;
+	font-size: 500%;
+	width: 1.2em; /*1,2 x 50px = 60px*/
+	text-align: center;
+	padding: 0.1em 0.1em 0;
+	background: #568;
+	color: white;
+	border: solid white 1px; 
+	border-width: 0 0.2em 0.2em 0;
+	margin: -10px 0.5em 0.2em -10px;
+}
+#eka h1{
+	font-weight: bold;
+}
+#toka{
+border: 1px solid black;
+}
+.suurennuslasi {
+	border: 1px solid black;
+    float: left;
+    width: 100px;
+    height: 70px;
+    background: white;
+    color: black;
+    border-width: 0 1px 1px 0;
+    padding: 0 10px 5px 0;
+    margin: -1px 25px 10px -1px;
+}
+#toka h2{
+	background-color: #718596;
+    text-align: right;
+    text-transform: lowercase;
+    font-size: 150%;
+    height: 20px;
+    font-weight: bold;
+}
+#kolmas{
+	border: 1px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*h1{
 font-size: 2rem;
 margin-bottom: 10px;
 font-weight: bold;
@@ -47,26 +108,12 @@ pre{
 	font-family: "Courier New", Courier, monospace
 }
 
-#toka h2, #kolmas h2 {
+/*#toka h2, #kolmas h2 {
 	background-color: #88AABB;
 	text-align: right;
 	padding: 10px;
 	text-transform:lowercase;
 	
 }
-		
-.iso-q {
-	float: left;
-	font-size: 500%;
-	width: 1.2em; /*1,2 x 50px = 60px*/
-	text-align: center;
-	padding: 0.1em 0.1em 0;
-	background: #568;
-	color: white;
-	border: solid white 1px; 
-	border-width: 0 0.2em 0.2em 0;
-	margin: -10px 0.5em 0.2em -10px;		
-}
-.bannerikuva img {
-		max-width: 100%;
-}
+		*/
+

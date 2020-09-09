@@ -1,21 +1,46 @@
 body{
  font-size: 62.5%;
+ display: block;
 }
 
-#wrap{
+#wrap {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 }
 
-#wrap > * {
+#wrap .box {
     flex-basis: 0px;
     flex-grow: 1;
     order: 1;
+    padding: 5px;
+    margin-bottom: -15px;
 }
+.box figure {
+    float: left;
+    clear: both;
 
+    position: relative;
+    overflow: auto;
+
+    margin: 0 auto;
+    padding: 30px 0 0 0;
+    font-size: 15px;
+}
 figure img {
     max-width: 100%;
+    vertical-align: bottom;
+}
+figure figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background: rgba(0,0,0,0.7);
+    text-align: center;
+    color: #fff; 
+    padding: 10px;
 }
 
 @media screen and (min-width: 426px) {
@@ -25,8 +50,35 @@ figure img {
         flex-wrap: wrap;
     }
     
-    #wrap > * {
+    #wrap .box {
         flex-basis: 50%;
+        /*flex-grow: 1;
+        order: 1; */
+    }
+}
+@media screen and (min-width: 769px) {
+    #wrap{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    #wrap .box {
+        flex-basis: 33%;
+        /*flex-grow: 1;
+        order: 1; */
+    }
+}
+
+@media screen and (min-width: 1025px){
+    #wrap{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    #wrap .box {
+        flex-basis: 25%;
         /*flex-grow: 1;
         order: 1; */
     }

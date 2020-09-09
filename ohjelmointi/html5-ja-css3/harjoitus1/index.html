@@ -6,8 +6,8 @@
 	<link rel="stylesheet" href="layout.css">
     <title>Boxpunch</title>
 <style type="text/css">
-	<!--
-	body {background:white; color: black;}
+	
+	
 	
 	div#main, div#main2, div#main3 {width: 75px; margin: 1em 12.5% 2em; background:#BDE;}
 	
@@ -34,12 +34,13 @@
 	<!--eka laatikko-->
 	<section id="eka">
 		<figure class="iso-q">Q</figure>
-		<h1 style="
-	background-color: #BBDDEE; text-align: right; padding: 10px; text-transform: lowercase; margin: -10px -10px 10px -10px;">How does one punch out the corner of an element and put something in the space created?</h1>
+		<h1>How does one punch out the corner of an element and put something in the space created?</h1>
+			<br>
 		<p>Answer: you don't, at least not structurally. But the appearance can be achieved very easily just by using floated elements and, when necessary, some tiny negative margins. In this example, I've wrapped the "Q" in a div of its own and then floated the div over. Then I give the float some nice padding and margins, and center the character. Finally, I set thick white borders on the float, which matches nicely with the white document background-- but only the right and bottom borders are made thick. The top and left borders are set to zero. To wit: 
 		</p>
 
 		<pre>
+			<br>
 		div#punch {
 		float: left; 
 		font-size: 500%;
@@ -58,6 +59,9 @@
 		
 	<!--toka laatikko-->
 	<section id= "toka">
+		<figure>
+			<img class="suurennuslasi" src="img/suurennuslasi.jfif" alt="suurennuslasi img">
+		</figure>
 	<h2 style="
 				   background-color: darkblue;
 				   text-align: right;
