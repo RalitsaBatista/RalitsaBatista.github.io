@@ -1,0 +1,33 @@
+body{
+ font-size: 62.5%;
+}
+
+#wrap{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#wrap > * {
+    flex-basis: 0px;
+    flex-grow: 1;
+    order: 1;
+}
+
+figure img {
+    max-width: 100%;
+}
+
+@media screen and (min-width: 426px) {
+    #wrap{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    #wrap > * {
+        flex-basis: 50%;
+        /*flex-grow: 1;
+        order: 1; */
+    }
+}

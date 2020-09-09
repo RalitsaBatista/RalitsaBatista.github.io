@@ -1,0 +1,68 @@
+html{
+    font-size: 62.5%;
+}
+.parent1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 0.5rem;
+}
+.parent1 > *{
+    flex-basis: 0px;
+    flex-grow: 1;
+    order: 2;
+}
+.color-red {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+.color-blue {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+.color-green {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.parent2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 0.5rem;
+}
+.parent2 > * {
+    flex-basis: 0px;
+    flex-grow: 1;
+    order: 2;
+}
+
+.parent2 .color-blue{
+flex-grow: 2;
+}
+
+.parent3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 0.5rem;
+}
+
+.parent3 > * {
+    flex-basis: 0px;
+    flex-grow: 1;
+    order: 2;
+}
+
+.parent3 .color-blue{
+    flex-grow: 2;
+}
+.parent3 .color-green{
+    order: 1;
+}
