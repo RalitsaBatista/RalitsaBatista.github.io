@@ -2,22 +2,17 @@ html {
 	font-size: 62,5%;
 }
 body {
-	padding: 10px;
-    font-family: 'Courier New', Courier, monospace;
-    margin-left: auto;
-    margin-right: auto;
+	font-family: 'Courier New', Courier, monospace;
 	max-width: 80rem;
-	background:white; 
-	color: black;
+	margin-left: auto;
+	margin-right: auto;
 }
-.bannerikuva img {
-	max-width: 100%;
-}
+
 section {
 	background-color: #BBDDEE;
-	margin-bottom: 10px;
-	padding: 10px;	
+    margin-bottom: 10px;
 }
+
 .iso-q {
 	float: left;
 	font-size: 500%;
@@ -30,11 +25,11 @@ section {
 	border-width: 0 0.2em 0.2em 0;
 	margin: -10px 0.5em 0.2em -10px;
 }
-#eka h1{
+#eka h1 {
 	font-weight: bold;
 }
 #toka{
-border: 1px solid black;
+	border: 1px solid black;
 }
 .suurennuslasi {
 	border: 1px solid black;
@@ -53,67 +48,61 @@ border: 1px solid black;
     text-transform: lowercase;
     font-size: 150%;
     height: 20px;
-    font-weight: bold;
+	font-weight: bold;
 }
 #kolmas{
-	border: 1px solid black;
+	border: 1px solid black;	
+}
+.box2 {
+float: left;
+width: 33%;
+text-align: left;
+font-size: 100%;
+background-color: white;
+padding: 1em;
+color: black;
+border: solid black 1px;
+border-width: 0 1px 0 1px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-/*h1{
-font-size: 2rem;
-margin-bottom: 10px;
-font-weight: bold;
-}
-h2{
-font-size: 1.8rem;
-margin-bottom: 10px;
-font-weight: bold;	
+#kolmas h2 {
+	background-color: #718596;
+    text-align: right;
+    text-transform: lowercase;
+    font-size: 150%;
+    height: 20px;
+	font-weight: bold;
 }
 
-h3{
-font-size: 1.6rem;
-margin-bottom: 10px;
-font-weight: bold;	
+.box3{
+	float: right;
+    width: 25%;
+    text-align: left;
+    font-size: 140%;
+    font-weight: bold;
+    font-style: italic;
+    padding: 1em;
+    text-indent: -0.5em;
+    background-color: white;
+    color: black;
+    border: solid black 1px;
+    border-width: 1px 0 1px 1px;
+    margin: 0.2em -1px 0.2em 0.5em;
 }
-ol {
-	list-style: decimal;
+#kolmas h3 {
+	font-weight: bold;
 }
+
 ul {
-	list-style: disc;
 	margin-left: 3rem;
 	margin-bottom: 10px;
-}
-ul li{
-    font-size: 1.4rem
-	margin-bottom: 5px;	
+	list-style-type: circle;
 }
 
-p {
-	font-size: 1.4rem
-	margin-bottom: 10px;
-}
 pre{
-	font-size: 1.4rem
-	font-family: "Courier New", Courier, monospace
+	display: block;
+    font-family: monospace;
+    white-space: pre;
+    margin: 1em 0px;
 }
-
-/*#toka h2, #kolmas h2 {
-	background-color: #88AABB;
-	text-align: right;
-	padding: 10px;
-	text-transform:lowercase;
-	
-}
-		*/
 
