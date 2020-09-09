@@ -23,7 +23,7 @@ section {
 	color: white;
 	border: solid white 1px; 
 	border-width: 0 0.2em 0.2em 0;
-	margin: -10px 0.5em 0.2em -10px;
+	margin: -1px 0.5em 0.2em 0px;
 }
 #eka h1 {
 	font-weight: bold;
@@ -37,10 +37,9 @@ section {
     width: 100px;
     height: 70px;
     background: white;
-    color: black;
-    border-width: 0 1px 1px 0;
-    padding: 0 10px 5px 0;
-    margin: -1px 25px 10px -1px;
+    padding: 0 5px 5px 0;
+	border-width: 1px;
+    margin: -10px 0 0 -10px;
 }
 #toka h2{
 	background-color: #718596;
@@ -49,6 +48,8 @@ section {
     font-size: 150%;
     height: 20px;
 	font-weight: bold;
+	padding: 10px;
+	margin: 0px;
 }
 #kolmas{
 	border: 1px solid black;	
@@ -62,7 +63,8 @@ background-color: white;
 padding: 1em;
 color: black;
 border: solid black 1px;
-border-width: 0 1px 0 1px;
+border-width: 1px 1px 1px 1px;
+margin: -1px;
 }
 
 #kolmas h2 {
@@ -72,6 +74,8 @@ border-width: 0 1px 0 1px;
     font-size: 150%;
     height: 20px;
 	font-weight: bold;
+	padding: 10px;
+	margin: 0px;
 }
 
 .box3{
