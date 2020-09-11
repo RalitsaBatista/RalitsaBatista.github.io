@@ -28,7 +28,7 @@ body{
 .nav > * {
     flex: 1 1 0;
     flex-grow: 1;
-    border: solid black 1px;
+    border: solid rgb(89, 126, 82) 1px;
     color: white;
     background-color: #9DCD7C;
     padding: 10px;
@@ -37,20 +37,6 @@ body{
 .nav li {
     display: list-item;
     text-align: -webkit-match-parent;
-}
-#boxes > * {
-    flex-grow: 1;
-    flex-basis: 33%;
-}
-#vision section{
-    flex-grow: 2;
-}
-#visions > * {
-    flex-grow: 1;
-    flex-basis: 0;
-}
-figure img {
-    max-width: 100%;
 }
 #vision{
     display: flex;
@@ -62,12 +48,23 @@ figure img {
     border: solid white 5px;
     display: none;
 }
+#vision section{
+    flex-grow: 2;
+}
+#visions > * {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+figure img {
+    max-width: 100%;
+}
+
 #vision p {
     text-align: center;
 }
+
 .mobile {
     display: block;
-    text-align: center;
     padding: 10px;
 }
 #boxes {
@@ -75,7 +72,7 @@ figure img {
     display: flex;
     flex-direction: column;
     flex-basis: 100%; 
-    padding: 5px 10px 0 10px;
+    
 }
 
 #specials {
@@ -140,7 +137,7 @@ footer .address {
 }
 footer .phone-number {
     padding: 2px 0 10px 10px;
-   color: black;
+    color: black;
 }
 .fa-facebook-square:before{
     float: right;
@@ -167,7 +164,7 @@ footer .phone-number {
         flex-wrap: nowrap;
         justify-content: center;
         align-items: center;
-        background-color: #ebe973fa;
+        background: url("../img/sandclipart.jfif");
         border: solid white 5px;
     }
     #vision > * {
@@ -179,141 +176,38 @@ footer .phone-number {
     }
     #boxes {
             flex-direction: row;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
             float: left;
-        }
-         
-    #boxes:first-child {
-            flex-grow: 1;
-            flex-basis: 50%;
-            
-              
-        }
-    #boxes:second-child {
-            flex-grow: 1;
-            flex-basis: 50%;
-    
+    }   
+    #news{
+            max-width: 98%;
     }
-    #boxes:third-child{
-        flex-grow: 1; 
-        flex-basis: 100%;
-    }
-    
 }
 /*desktop*/
 @media screen and (min-width: 769px){
     .mobile {
     display: none;
     }
-
-
-}
-
-/*tabletti
- @media screen and (min-width: 426px) {
-    #logo img{
-        position: top left;
-        max-width: 50%;
+    #nav {
+        flex-direction: row;
+        flex-wrap: wrap;
     }
-    #vision {
-        display: flex;
-        flex-flow: row-reverse wrap;
-        /*flex-direction: row ;
-        flex-wrap: nowrap;
-        background-color: #84C158;
-        background-repeat: repeat-x repeat-y;
-        justify-content: center;
-        align-items:center;
+
+    #vision{
         border: solid white 10px;
         border-width: 10px 0 10px 0;
+        font-size: 20px;
     }
-    #vision .p1 {
-        font-size:14px;
-        max-width: 50%;
-        float: left;
-    }
-    #vision img{
-        display: inline;
-        max-width: 50%;
-        border: solid white 5px;
-        margin: 2px;
+    #boxes > * {
         flex-grow: 1;
+        min-width: 33%;
+    }
+    #news {
         flex-basis: 0;
-        position: right;
     }
-    .nav ol{
-       min-width: 425spx;
-       display: inline;
-    }
-    .nav li{
-        display: inline;
-        padding: 5px;
-        margin: 0px;
-    }
+    #news > * {
+       padding: 5px;
+   }
     
-    #vision section {
-        flex-grow: 2;
-        padding: 1rem;
-        font-size: 1.8rem;
-        flex-basis: 0;
-        background-color: rgb(229, 229, 155);
-    }
-    .mobile{
-    display: block;
-    text-align: center;
-    padding: 10px;
-    }
- 
-    #specials{
-    margin-top: 1 rem;
-    }
-    #boxes{
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        flex-grow: 1;
-        flex-basis:0;
-        text-align: center;
-    }
-    .news1 {
-        flex-basis: 100%;
-        flex-grow: 1;
-        display: flex;
-        flex-direction: row;
-    }
-    
-    #specials{
-        flex-basis: 0;
-        flex-grow: 1;
-        border-width: 0.8rem 0 0.8rem 0.8rem;
-    }
-    .tasty{
-    display: block;
-    text-align: center;
-    padding: 10px;
-    }
-    #events{
-        flex-basis: 0;
-        flex-grow: 1;
-    }
-    
-}
 
-/*desktop
-@media screen and(min-width: 725px) {
- #vision{
-     border: solid white 10px;
-     border-width: 10px 0 10px 0;
-     font-size: 20px;
- }
- #news {
-     flex-basis: 0;
- }
- #news > * {
-    padding: 5px;
 }
- #nav {
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-}*/
