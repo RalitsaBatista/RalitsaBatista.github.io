@@ -148,6 +148,7 @@ footer .phone-number {
 @media screen and (min-width: 426px) {
   #logo img {
     display: block;
+    width: auto;
   }
   .nav {
     flex-direction: row;
