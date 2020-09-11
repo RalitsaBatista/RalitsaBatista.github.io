@@ -1,213 +1,202 @@
-html{
-    font-size: 62.5%
+html {
+  font-size: 62.5%;
 }
-body{
-
-    font-family: Arial, verdana, serif; 
-    background-color:#74A252;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 80rem;
-    padding: 10px;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #74a252;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
 }
 .logo {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 40px;
-    margin-inline-end: 40px;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
 }
-.nav{
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    text-align: center;
-    font-weight: bold;
+.nav {
+  padding: 10px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  text-align: center;
+  font-weight: bold;
 }
 .nav > * {
-    flex: 1 1 0;
-    flex-grow: 1;
-    border: solid rgb(89, 126, 82) 1px;
-    color: white;
-    background-color: #9DCD7C;
-    padding: 10px;
-    border-radius: 10px;
+  flex: 1 1 0;
+  flex-grow: 1;
+  border: solid rgb(89, 126, 82) 1px;
+  color: white;
+  background-color: #9dcd7c;
+  padding: 10px;
+  border-radius: 10px;
 }
 .nav li {
-    display: list-item;
-    text-align: -webkit-match-parent;
+  display: list-item;
+  text-align: -webkit-match-parent;
 }
-#vision{
+#vision {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #84c158;
+  border: solid white 5px;
+  display: none;
+}
+#vision section {
+  flex-grow: 2;
+}
+#visions > * {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+figure img {
+  max-width: 100%;
+}
+
+#vision p {
+  text-align: center;
+}
+
+.mobile {
+  display: block;
+  padding: 10px;
+}
+#boxes {
+  background-color: #74a252;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+}
+
+#specials {
+  background-color: white;
+}
+
+#specials h2 {
+  background-color: #e2dfdf;
+  padding: 5px;
+  border: solid white 4px;
+}
+
+figure {
+  display: block;
+  text-align: center;
+  padding: 10px;
+}
+i {
+  font-weight: 900;
+  margin-left: 3em;
+  font-size: 30px;
+  height: 30px;
+  vertical-align: middle;
+  float: right;
+}
+#events {
+  background-color: white;
+}
+
+#events h2 {
+  background-color: #e2dfdf;
+  padding: 5px;
+  border: solid white 4px;
+}
+
+#news {
+  background-color: white;
+}
+
+#news h2 {
+  background-color: #e2dfdf;
+  padding: 5px;
+  border: solid white 4px;
+}
+.bold {
+  font-weight: bold;
+}
+.smedia {
+  float: right;
+  font-size: 1.5rem;
+  padding: 5px 10px 0 0;
+}
+footer {
+  color: white;
+  padding: 10px 5px 10px 5px;
+}
+
+footer .phone-number {
+  color: black;
+}
+
+.fab,
+.far,
+.fa-chevron-right,
+.fa-facebook-square:before {
+  font-weight: 400;
+  float: right;
+}
+
+/*tablet*/
+@media screen and (min-width: 426px) {
+  #logo img {
+    display: block;
+  }
+  .nav {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-align: center;
+  }
+  #vision {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    background-color: #84C158;
+    background: url("../img/sandclipart.jfif");
     border: solid white 5px;
-    display: none;
-}
-#vision section{
-    flex-grow: 2;
-}
-#visions > * {
+  }
+  #vision > * {
     flex-grow: 1;
     flex-basis: 0;
-}
-figure img {
-    max-width: 100%;
-}
-
-#vision p {
-    text-align: center;
-}
-
-.mobile {
-    display: block;
-    padding: 10px;
-}
-#boxes {
-    background-color: #74A252;
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%; 
-    
-}
-
-#specials {
-    background-color: white;
-}
-
-#specials h2{
-    background-color: #e2dfdf;
-    padding: 5px;
-    border: solid white 4px;
-}
-
-figure {
-    display: block;
-    text-align: center;
-    padding: 10px;
-}
-i {
-    font-weight: 900;
-    margin-left: 3em;
-    font-size: 30px;
-    height: 30px;
-    vertical-align: middle;
-    float: right;
-}
-#events {
-    background-color: white;
-   
-}
-#events h2{
-    background-color: #e2dfdf;
-    padding: 5px;
-    border: solid white 4px;
-}
-
-#news {
-    background-color: white;
-   
-}
-#news h2{
-    background-color: #e2dfdf;
-    padding: 5px;
-    border: solid white 4px;
-}
-.bold {
-    font-weight: bold;
-}
-.smedia{
-        float: right;
-        font-size: 1.5rem;
-        padding: 5px 10px 0 0;
-}
-footer {
-    color: white;
-    padding: 5px;
-}
-footer .citrus {
-    padding: 5px 0 0 10px;
-}
-footer .address {
-    padding: 2px 0 0 10px;
-}
-footer .phone-number {
-    padding: 2px 0 10px 10px;
-    color: black;
-}
-.fa-facebook-square:before{
-    float: right;
-}
-.fab, .far {
-    font-weight: 400;
-}
-.fa-chevron-right {
-    float: right;
-}
-/*tablet*/
-@media screen and (min-width: 426px){
-    #logo img{
-       display: block;
-    }
-    .nav {
-        flex-direction: row;
-        flex-wrap: nowrap;
-        text-align: center;
-    }
-    #vision {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-        background: url("../img/sandclipart.jfif");
-        border: solid white 5px;
-    }
-    #vision > * {
-        flex-grow: 1;
-        flex-basis: 0;
-    }
-    .mobile {
-        display: none;
-    }
-    #boxes {
-            flex-direction: row;
-            flex-wrap: nowrap;
-            float: left;
-    }   
-    #news{
-            max-width: 98%;
-    }
+  }
+  .mobile {
+    display: none;
+  }
+  #boxes {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    float: left;
+  }
+  #news {
+    max-width: 98%;
+  }
 }
 /*desktop*/
-@media screen and (min-width: 769px){
-    .mobile {
+@media screen and (min-width: 769px) {
+  .mobile {
     display: none;
-    }
-    #nav {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
+  }
+  #nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
-    #vision{
-        border: solid white 10px;
-        border-width: 10px 0 10px 0;
-        font-size: 20px;
-    }
-    #boxes > * {
-        flex-grow: 1;
-        min-width: 33%;
-    }
-    #news {
-        flex-basis: 0;
-    }
-    #news > * {
-       padding: 5px;
-   }
-    
-
+  #vision {
+    border: solid white 10px;
+    border-width: 10px 0 10px 0;
+    font-size: 20px;
+  }
+  #boxes > * {
+    flex-grow: 1;
+    min-width: 33%;
+  }
+  #news {
+    flex-basis: 0;
+  }
+  #news > * {
+    padding: 5px;
+  }
 }
