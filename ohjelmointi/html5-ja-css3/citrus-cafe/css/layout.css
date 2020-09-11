@@ -1,12 +1,9 @@
-html {
-  font-size: 62.5%;
-}
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #74a252;
+  background-color: #87c261;
   margin-left: auto;
   margin-right: auto;
-  padding: 5px;
+  padding: 10px;
 }
 .logo {
   display: block;
@@ -36,15 +33,18 @@ body {
   display: list-item;
   text-align: -webkit-match-parent;
 }
+#maincontent{
+  display: flex;
+  flex-direction: column;
+  
+}
 #vision {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  background-color: #84c158;
-  border: solid white 5px;
-  display: none;
+  display: none;  
 }
 #vision section {
   flex-grow: 2;
@@ -53,10 +53,6 @@ body {
   flex-grow: 1;
   flex-basis: 0;
 }
-figure img {
-  max-width: 100%;
-}
-
 #vision p {
   text-align: center;
 }
@@ -66,27 +62,34 @@ figure img {
   padding: 10px;
 }
 #boxes {
-  background-color: #74a252;
+  background-color: #FFF;
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
+  border:10px solid #FFF;
 }
 
 #specials {
   background-color: white;
 }
 
-#specials h2 {
+#specials > h2 {
   background-color: #e2dfdf;
-  padding: 5px;
-  border: solid white 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+#specials > figure{
+  margin-right: 10px;
 }
 
 figure {
   display: block;
   text-align: center;
-  padding: 10px;
+  
 }
+
 i {
   font-weight: 900;
   margin-left: 3em;
@@ -101,18 +104,22 @@ i {
 
 #events h2 {
   background-color: #e2dfdf;
-  padding: 5px;
-  border: solid white 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
 }
-
+#events > figure{
+  margin-right: 10px;
+}
 #news {
-  background-color: white;
+
 }
 
 #news h2 {
   background-color: #e2dfdf;
-  padding: 5px;
-  border: solid white 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
 }
 .bold {
   font-weight: bold;
@@ -157,8 +164,8 @@ footer .phone-number {
     justify-content: center;
     align-items: center;
     background: url("../img/sandclipart.jfif");
-    border: solid white 5px;
-    padding: 5px 0px 5px 0px;
+    border: 10px solid #FFF;
+    margin-bottom: 10px;
   }
   #vision > * {
     flex-grow: 1;
@@ -170,10 +177,9 @@ footer .phone-number {
   #boxes {
    
     flex-direction: row;
-    flex-wrap: nowrap;
-    float: left;
+    flex-wrap: nowrap;    
   }
-ws {
+  #boxes img {
     width: 100%;
   }
 }
@@ -188,8 +194,6 @@ ws {
   }
 
   #vision {
-    border: solid white 10px;
-    border-width: 10px 0 10px 0;
     font-size: 20px;
   }
   #boxes > * {
