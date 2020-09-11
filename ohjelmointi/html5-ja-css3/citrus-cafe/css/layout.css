@@ -180,17 +180,19 @@ footer .phone-number {
     #boxes {
             flex-direction: row;
             flex-wrap: wrap;
+            float: left;
         }
          
     #boxes:first-child {
             flex-grow: 1;
             flex-basis: 50%;
+            
               
         }
     #boxes:second-child {
             flex-grow: 1;
             flex-basis: 50%;
-            
+    
     }
     #boxes:third-child{
         flex-grow: 1; 
