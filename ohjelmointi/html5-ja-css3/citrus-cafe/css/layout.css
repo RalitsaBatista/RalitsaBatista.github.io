@@ -148,6 +148,7 @@ footer .phone-number {
     flex-direction: row;
     flex-wrap: nowrap;
     text-align: center;
+    padding-bottom: 5px;
   }
   #vision {
     display: flex;
@@ -157,6 +158,7 @@ footer .phone-number {
     align-items: center;
     background: url("../img/sandclipart.jfif");
     border: solid white 5px;
+    padding: 5px 0px 5px 0px;
   }
   #vision > * {
     flex-grow: 1;
@@ -166,12 +168,13 @@ footer .phone-number {
     display: none;
   }
   #boxes {
+   
     flex-direction: row;
     flex-wrap: nowrap;
     float: left;
   }
-  #news {
-    max-width: 98%;
+ws {
+    width: 100%;
   }
 }
 /*desktop*/
