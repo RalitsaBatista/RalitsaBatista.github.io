@@ -5,6 +5,9 @@ body {
   margin-right: auto;
   padding: 10px;
 }
+img {
+  width: 100%;
+}
 .logo {
   display: block;
   margin-block-start: 1em;
@@ -61,6 +64,7 @@ body {
   display: block;
   padding: 10px;
 }
+
 #boxes {
   background-color: #FFF;
   display: flex;
@@ -68,7 +72,12 @@ body {
   flex-basis: 100%;
   border:10px solid #FFF;
 }
-
+#boxes > *{
+  margin-bottom: 10px;
+}
+#boxes > *:last-child{
+  margin-bottom: 0px;
+}
 #specials {
   background-color: white;
 }
@@ -77,17 +86,13 @@ body {
   background-color: #e2dfdf;
   padding: 10px;
   margin-bottom: 10px;
-  margin-right: 10px;
+  
 }
 
-#specials > figure{
-  margin-right: 10px;
-}
 
 figure {
   display: block;
-  text-align: center;
-  
+  text-align: center;  
 }
 
 i {
@@ -106,20 +111,13 @@ i {
   background-color: #e2dfdf;
   padding: 10px;
   margin-bottom: 10px;
-  margin-right: 10px;
-}
-#events > figure{
-  margin-right: 10px;
-}
-#news {
-
+ 
 }
 
 #news h2 {
   background-color: #e2dfdf;
   padding: 10px;
   margin-bottom: 10px;
-  margin-right: 10px;
 }
 .bold {
   font-weight: bold;
@@ -171,14 +169,35 @@ footer .phone-number {
     flex-grow: 1;
     flex-basis: 0;
   }
+  #vision img{
+    width:100%;
+  }
+  #boxes {
+    flex-direction: row;
+    flex-wrap: wrap;    
+  }
+  #boxes > *{
+    width: 50%;
+  }
+  #boxes > *:last-child{
+    width: 100%;
+  }
+  #specials {
+    margin-bottom: 10px;
+  }
+  #events {
+    margin-bottom: 10px;
+  }
+  #specials > *{
+    margin-right: 5px;
+  } 
+  #events > *{
+    margin-left: 5px;
+  } 
   .mobile {
     display: none;
   }
-  #boxes {
-   
-    flex-direction: row;
-    flex-wrap: nowrap;    
-  }
+  
   #boxes img {
     width: 100%;
   }
@@ -192,18 +211,26 @@ footer .phone-number {
     flex-direction: row;
     flex-wrap: wrap;
   }
-
   #vision {
     font-size: 20px;
+  }
+  #boxes {
+     flex-wrap: nowrap;
   }
   #boxes > * {
     flex-grow: 1;
     min-width: 33%;
+    width: 33%;    
+    margin-bottom: 0;
   }
-  #news {
-    flex-basis: 0;
+  
+  #boxes > * > *{
+    margin-right: 10px;
+    margin-left: 0;
   }
-  #news > * {
-    padding: 5px;
+  #boxes > *:last-child > *{
+    margin-right: 0px;
   }
+
+ 
 }
