@@ -38,8 +38,7 @@ img {
 }
 #maincontent{
   display: flex;
-  flex-direction: column;
-  
+  flex-direction: column; 
 }
 #vision {
   display: flex;
@@ -158,6 +157,9 @@ footer .phone-number {
     display: block;
     width: auto;
   }
+  #maincontent {
+    margin-top: 10px;
+}
   .nav {
     flex-direction: row;
     flex-wrap: nowrap;
@@ -216,6 +218,9 @@ footer .phone-number {
   #container {
     width: 80%;
     margin: 0 auto;
+    }
+    #maincontent {
+      margin-top: 10px;
     }
   .mobile {
     display: none;
