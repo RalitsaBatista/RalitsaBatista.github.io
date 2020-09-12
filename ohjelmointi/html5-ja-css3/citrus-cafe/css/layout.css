@@ -88,8 +88,6 @@ img {
   margin-bottom: 10px;
   
 }
-
-
 figure {
   display: block;
   text-align: center;  
@@ -119,6 +117,16 @@ i {
   padding: 10px;
   margin-bottom: 10px;
 }
+.news-events li > span {
+  min-width: 31px;
+  display: inline-block;
+  text-align: right;
+  margin-right: 10px;
+  }
+  
+  footer p {
+  line-height: 25px;
+  }
 .bold {
   font-weight: bold;
 }
