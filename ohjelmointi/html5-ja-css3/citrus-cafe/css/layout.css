@@ -62,6 +62,7 @@ img {
 .mobile {
   display: block;
   padding: 10px;
+  line-height: 25px;
 }
 
 #boxes {
@@ -121,6 +122,7 @@ i {
   display: inline-block;
   text-align: right;
   margin-right: 10px;
+  line-height: 25px;;
   }
   
   footer p {
