@@ -3,13 +3,21 @@ html{
 }
 body{
     box-sizing: border-box;
+    display: flex;
+    flex-wrap:wrap;
+    /*flex-direction: row-reverse;*/
 }
 .container{
     box-sizing: border-box;
     width: 400px;
+    border-style: solid;
+    background-color: gainsboro;
+    background-image: linear-gradient(to bottom right,gainsboro, white );
+    padding: 1em;
 }
 .clearfix{
     overflow: auto;
+    clear: left;
 }
 .clearfix::after{
     visibility: hidden;
@@ -19,10 +27,18 @@ body{
     font-size: 0;
     height: 0;
   }
-.container .image img {
+.container .image{
     float: left;
     width: 30%;
     box-sizing: border-box;
+}
+.container .image img{
+    padding: 5px;
+    border: 1px solid;
+    border-color: lightgray darkgray darkgray lightgray;
+    background-color: white;
+    box-shadow: darkgray 3px solid;
+    max-width: 100%;
 }
 .container .heading{
     float: right;
@@ -33,5 +49,38 @@ body{
     float: left;
     width: 70%;
     box-sizing: border-box;
+}
+.container .heading h1{
+    font-size:1.5em
+}
+.container .text p{
+    padding-bottom: 10px;
+}
+.reverse .heading{
+    float: left;
+    
+}
+.reverse .text{
+float: left;
+
+}
+.reverse .image{
+float: left;
+}
+.reverse .image img{
+float: left;
+}
+
+
+ @media screen and (max-width: 425px){
+     body{
+         margin: 0;
+     }
+     .container{
+        margin: 0 0 inherit 0;
+        width: 100%;
+        min-width: 320px;
+        padding:10px;
+    }
 }
 
