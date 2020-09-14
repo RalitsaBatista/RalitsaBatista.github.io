@@ -123,15 +123,15 @@ footer figure img {
     #wrapper {
         flex-direction: column;
     }
-    #main {
+    #wrapper #main {
         flex-basis: 100%;
         width: 100%;
         order: 1;
     }
-    #sidebar {
-        margin: 0 30px;
-        width: 100%;
+    #wrapper .sidebar {
         order: 2;
+        flex-basis: 100%;
+        padding: 10px;
     }
     footer {
         order: 3;
