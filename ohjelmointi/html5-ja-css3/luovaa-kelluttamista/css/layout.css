@@ -7,7 +7,7 @@ body{
     flex-wrap:wrap;
     /*flex-direction: row-reverse;*/
 }
-article{
+.container{
     box-sizing: border-box;
     width: 400px;
     border: 10px black;
@@ -55,20 +55,21 @@ article{
 }
 .container .text p{
     padding-bottom: 10px;
+    font-size: 1.2em;
 }
 .reverse .heading{
     float: left;
     
 }
 .reverse .text{
-float: left;
+    float: left;
 
 }
 .reverse .image{
-float: left;
+    float: left;
 }
 .reverse .image img{
-float: left;
+    float: left;
 }
 
 
