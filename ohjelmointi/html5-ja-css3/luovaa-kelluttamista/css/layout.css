@@ -10,16 +10,16 @@ body{
 .container{
     box-sizing: border-box;
     width: 400px;
-    border-style: solid;
+    border-style: 2px solid black;
+    border-radius: 10px;
     background-color: gainsboro;
     background-image: linear-gradient(to bottom right,gainsboro, white );
     padding: 1em;
 }
 .clearfix{
     overflow: auto;
-    clear: left;
 }
-.clearfix::after{
+.clearfix:after{
     visibility: hidden;
     content: "";
     clear: both;
@@ -37,7 +37,7 @@ body{
     border: 1px solid;
     border-color: lightgray darkgray darkgray lightgray;
     background-color: white;
-    box-shadow: darkgray 3px solid;
+    box-shadow: darkgray 3px;
     max-width: 100%;
 }
 .container .heading{
