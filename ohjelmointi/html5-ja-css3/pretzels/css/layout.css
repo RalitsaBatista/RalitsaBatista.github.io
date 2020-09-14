@@ -120,11 +120,16 @@ footer figure img {
 }
 /*tablet*/
 @media screen and (min-width:551px) and (max-width: 880px) {
+    #wrapper {
+        flex-direction: column;
+    }
     #main {
         flex-basis: 100%;
+        width: 100%;
     }
     #sidebar {
-        flex-basis: 100%;
+        margin: 0 30px;
+        width: 100%;
     }
     
 }
