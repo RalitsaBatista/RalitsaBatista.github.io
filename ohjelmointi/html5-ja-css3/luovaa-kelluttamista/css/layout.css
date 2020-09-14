@@ -7,13 +7,13 @@ body{
     flex-wrap:wrap;
     /*flex-direction: row-reverse;*/
 }
-.container{
+article{
     box-sizing: border-box;
     width: 400px;
-    border-style: 2px solid black;
-    border-radius: 10px;
+    border: 10px black;
+    border-radius: 5px;
     background-color: gainsboro;
-    background-image: linear-gradient(to bottom right,gainsboro, white );
+    background: linear-gradient(45deg, white, gainsboro);
     padding: 1em;
 }
 .clearfix{
