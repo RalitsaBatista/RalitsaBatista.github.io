@@ -151,6 +151,7 @@ footer figure img {
     }
     #wrapper #main {
         flex-basis: 100%;
+        max-width: 100%;
         order: 1;
     }
     #wrapper .sidebar {
