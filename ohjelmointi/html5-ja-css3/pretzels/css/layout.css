@@ -121,7 +121,11 @@ footer figure img {
     }
     .navigation #logo {
         flex-basis: 100%;
-
+    }
+    .navigation #logo img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
     #wrapper #main {
         flex-basis: 100%;
