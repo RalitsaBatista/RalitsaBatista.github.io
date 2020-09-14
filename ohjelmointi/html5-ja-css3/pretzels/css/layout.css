@@ -126,10 +126,15 @@ footer figure img {
     #main {
         flex-basis: 100%;
         width: 100%;
+        order: 1;
     }
     #sidebar {
         margin: 0 30px;
         width: 100%;
+        order: 2;
+    }
+    footer {
+        order: 3;
     }
     
 }
