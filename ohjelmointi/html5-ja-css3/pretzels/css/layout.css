@@ -116,7 +116,21 @@ footer figure img {
 
 /*mobile*/
 @media screen and (max-width:550px) {
-    
+    .navigation {
+        text-align: center;
+    }
+    .navigation #logo {
+        flex-basis: 100%;
+
+    }
+    #wrapper #main {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+    #wrapper .sidebar {
+        flex-basis:100%;
+        max-width: 100%;
+    }
 }
 /*tablet*/
 @media screen and (min-width:551px) and (max-width: 880px) {
@@ -125,7 +139,6 @@ footer figure img {
     }
     #wrapper #main {
         flex-basis: 100%;
-        width: 100%;
         order: 1;
     }
     #wrapper .sidebar {
