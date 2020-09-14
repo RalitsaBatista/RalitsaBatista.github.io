@@ -1,5 +1,37 @@
 html{
     font-size:62.5%;
 }
-
+body{
+    box-sizing: border-box;
+}
+.container{
+    box-sizing: border-box;
+    width: 400px;
+}
+.clearfix{
+    overflow: auto;
+}
+.clearfix::after{
+    visibility: hidden;
+    content: "";
+    clear: both;
+    display: block;
+    font-size: 0;
+    height: 0;
+  }
+.container .image img {
+    float: left;
+    width: 30%;
+    box-sizing: border-box;
+}
+.container .heading{
+    float: right;
+    width: 70%;
+    box-sizing: border-box;
+}
+.container .text{
+    float: left;
+    width: 70%;
+    box-sizing: border-box;
+}
 
