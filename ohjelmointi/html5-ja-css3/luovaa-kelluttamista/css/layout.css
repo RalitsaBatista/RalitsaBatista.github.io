@@ -5,19 +5,21 @@ body{
     box-sizing: border-box;
     display: flex;
     flex-wrap:wrap;
-    /*flex-direction: row-reverse;*/
+
 }
 .container{
     box-sizing: border-box;
     width: 400px;
-    border: 10px black;
+    border: 1px rgb(51, 46, 46) solid;
     border-radius: 5px;
     background-color: gainsboro;
     background: linear-gradient(45deg, white, gainsboro);
-    padding: 1em;
+    padding: 5em;
+    margin-right: 10px;
 }
 .clearfix{
     overflow: auto;
+    
 }
 .clearfix:after{
     visibility: hidden;
@@ -58,19 +60,27 @@ body{
     font-size: 1.2em;
 }
 .reverse .heading{
-    float: left;
     
+    display: flex;
+    flex-direction: row-reverse; 
 }
 .reverse .text{
-    float: left;
+    padding-right: 2px;
+}
+.reverse .image img{
+    padding-right: 2px;
+}
+/*.reverse .text{
 
 }
 .reverse .image{
-    float: left;
+ 
+    
 }
 .reverse .image img{
-    float: left;
-}
+   
+
+}*/
 
 
  @media screen and (max-width: 425px){
