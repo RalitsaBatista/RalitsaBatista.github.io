@@ -46,10 +46,12 @@ body{
     flex-grow: 1;
     flex-basis: 0;
     text-align:center;
+    color: black;
 }
 figure img{
     max-width: 100%;
 }
+
 .navigation .submenu {
     display: block;
 }
@@ -127,6 +129,9 @@ footer figure img {
         margin-left: auto;
         margin-right: auto;
     }
+    .navigation .submenu{
+        display: none;
+    }
     #wrapper #main {
         flex-basis: 100%;
         max-width: 100%;
@@ -140,6 +145,9 @@ footer figure img {
 @media screen and (min-width:551px) and (max-width: 880px) {
     #wrapper {
         flex-direction: column;
+    }
+    .navigation .submenu{
+        display: none;
     }
     #wrapper #main {
         flex-basis: 100%;
