@@ -5,59 +5,59 @@ body{
     box-sizing: border-box;
     display: flex;
     flex-wrap:wrap;
-
+    font-family: Arial, Helvetica, sans-serif;
 }
 .container{
-    box-sizing: border-box;
     width: 400px;
-    border: 1px rgb(51, 46, 46) solid;
-    border-radius: 5px;
+    border: 1px solid rgb(51, 46, 46) ;
+    border-radius: 10px;
     background-color: gainsboro;
     background: linear-gradient(to bottom right, gainsboro, white);
-    padding: 5em;
-    margin-right: 10px;
+    padding: 1em;
 }
 .grid-config{
-    overflow: auto;
-    
+    display: grid;  /* grid käyttöön */
+    grid-gap: 1rem;  /* grid-solujen välit */
+    grid-template-columns: 25% 75%; /* grid sarakeleveydet */
+    grid-template-rows:auto; /* grid rivikorkeudet */
+    grid-template-areas: /* nimettyjen alueiden sijoittaminen gridiin */
+        "image heading"
+        "image text";
+    margin: 0 1rem 2rem 0;
 }
-.grid-config:after{
-    visibility: hidden;
-    content: "";
-    clear: both;
-    display: block;
-    font-size: 0;
-    height: 0;
-  }
+.container .heading{
+    grid-area: heading;
+}
+.container .heading h1{
+    font-size:1.5em;
+    padding: 10px; 
+    font-weight: bold;
+}
 .container .image{
-    float: left;
-    width: 30%;
-    box-sizing: border-box;
+    grid-area: image;
 }
-.container .image img{
+.container img{
     border: 1px solid;
     border-color: lightgray darkgray darkgray lightgray;
     background-color: white;
     box-shadow: darkgray 3px;
     max-width: 100%;
-}
-.container .heading{
-    float: right;
-    width: 70%;
-    box-sizing: border-box;
+    padding: 5px;
 }
 .container .text{
-    float: left;
-    width: 70%;
-    box-sizing: border-box;
+    grid-area: text;
 }
-.container .heading h1{
-    font-size:1.5em;
-    padding-bottom: 5px; 
-}
+
 .container .text p{
     padding-bottom: 10px;
+    text-align: justify;
     font-size: 1.2em;
+}
+.reverse{
+    grid-template-areas: 
+    "heading image"
+    "text image";
+    grid-template-columns: 75% 25%;
 }
 .reverse .heading{
     float:left; 
