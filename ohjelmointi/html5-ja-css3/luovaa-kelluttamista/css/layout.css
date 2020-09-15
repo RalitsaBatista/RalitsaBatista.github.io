@@ -52,7 +52,8 @@ body{
     box-sizing: border-box;
 }
 .container .heading h1{
-    font-size:1.5em
+    font-size:1.5em;
+    padding-bottom: 5px; 
 }
 .container .text p{
     padding-bottom: 10px;
@@ -74,7 +75,6 @@ body{
 }
 .reverse .image{
     float: left;
-    
 }
 .reverse .image img{
     float: left;
