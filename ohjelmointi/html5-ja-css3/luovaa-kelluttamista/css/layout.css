@@ -69,17 +69,16 @@ body{
 .reverse .image img{
     padding-right: 2px;
 }
-/*.reverse .text{
-
+.reverse .text{
+    float: left;
 }
 .reverse .image{
- 
+    float: left;
     
 }
 .reverse .image img{
-   
-
-}*/
+    float: left;
+}
 
 
  @media screen and (max-width: 425px){
