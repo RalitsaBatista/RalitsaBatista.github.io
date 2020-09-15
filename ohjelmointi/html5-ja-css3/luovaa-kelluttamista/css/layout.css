@@ -13,7 +13,7 @@ body{
     border: 1px rgb(51, 46, 46) solid;
     border-radius: 5px;
     background-color: gainsboro;
-    background: linear-gradient(45deg, white, gainsboro);
+    background: linear-gradient(to bottom right, gainsboro, white);
     padding: 5em;
     margin-right: 10px;
 }
@@ -60,9 +60,7 @@ body{
     font-size: 1.2em;
 }
 .reverse .heading{
-    
-    display: flex;
-    flex-direction: row-reverse; 
+    float:left; 
 }
 .reverse .text{
     padding-right: 2px;
@@ -71,13 +69,13 @@ body{
     padding-right: 2px;
 }
 .reverse .text{
-    float: left;
+    float: right;
 }
 .reverse .image{
-    float: left;
+    float: right;
 }
 .reverse .image img{
-    float: left;
+    float: right;
 }
 
 
