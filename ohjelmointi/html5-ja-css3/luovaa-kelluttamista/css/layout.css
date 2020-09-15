@@ -17,11 +17,11 @@ body{
     padding: 5em;
     margin-right: 10px;
 }
-.clearfix{
+.grid-config{
     overflow: auto;
     
 }
-.clearfix:after{
+.grid-config:after{
     visibility: hidden;
     content: "";
     clear: both;
