@@ -13,7 +13,8 @@ body{
     border-radius: 10px;
     background-color: gainsboro;
     background: linear-gradient(to bottom right, gainsboro, white);
-    padding: 1em;
+    padding: 1em; 
+    margin: 5px;
 }
 .grid-config{
     display: grid;  /* grid käyttöön */
@@ -58,6 +59,7 @@ body{
     "heading image"
     "text image";
     grid-template-columns: 75% 25%;
+    margin: 5px;
 }
 .reverse .heading{
     float:left; 
