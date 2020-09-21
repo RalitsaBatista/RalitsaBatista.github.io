@@ -1,0 +1,35 @@
+html {
+    font-size: 62,50%;
+}
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 15px;
+    font-size: 2rem;
+    color: #b9b6b6;
+    letter-spacing: 1rem;
+}
+.wrapp{
+    background-color: #b9b6b6;
+    padding: 20px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    flex-wrap: nowrap;
+    margin: 0;
+    
+}
+ul > * {
+    padding: 15px;
+}
+ul li{
+    color:black;
+}
+#placeholder {
+    border: solid white 15px;
+}
+#description{
+    padding-top: 15px;
+}
