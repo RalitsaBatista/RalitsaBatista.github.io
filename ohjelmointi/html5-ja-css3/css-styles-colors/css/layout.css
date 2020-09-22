@@ -20,7 +20,7 @@ body{
     animation-duration: 4s;
     animation-name: bluecolor;
     top: -35px;
-    left: 95px;
+    left: 75px;
 }
 
 #toka{
@@ -64,14 +64,16 @@ h1{
     color: rgb(147, 216, 243);
     font-family: serif;
     letter-spacing: 1rem;
-    margin-left: -10px;
+    margin-left: 40px;
+    font-size: 20px;
+
 }
 
 #kappale2 .magenta{
     background-color: rgb(155, 66, 155);
     color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding:5px;
+    padding:10px;
 }
 figure, p{
     text-align: left;
@@ -81,18 +83,24 @@ figure, p{
 
 @keyframes bluecolor{
     0% {
-        margin-top: -200px;
+        
+        transform: translateY(-100%);
     }
     100% {
-        margin-bottom: 75px;
+        
+        transform: translateY(0);
     }
 }
 @keyframes greencolor{
     0% {
-        margin-left: -100px;
+       
+        visibility: hidden;        
+        transform: translateX(-100%);
     }
-    100%{
-        margin-bottom: 75px;
     
+    100%{
+        
+        visibility: visible;
+        transform: translateX(0);        
     }
 }
