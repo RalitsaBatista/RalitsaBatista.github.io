@@ -1,0 +1,98 @@
+html{
+    font-size: 62.50%;
+}
+body{
+    background-color: white;
+}
+
+#wrapper{
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+#eka{
+    background-color: rgb(147, 216, 243);
+    opacity: 0.5;
+    width: 320px;
+    height: 200px;
+    position: absolute;
+    z-index: -1;
+    animation-duration: 4s;
+    animation-name: bluecolor;
+    top: -35px;
+    left: 95px;
+}
+
+#toka{
+    background-color: rgb(213, 235, 184);
+    width: 100px;
+    height: 150px;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.5;
+    left: 170px;
+    top: 110px;
+    animation-name: greencolor;
+    animation-duration: 4s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+
+#kolmas{
+    border: solid 10px orange;
+    border-radius: 10px;
+    height: 200px;
+    width: 440px;
+    text-align: center;
+}
+h1{
+    font-size: 24px;
+    font-family: sans-serif;
+    padding:5px;
+    margin-top:55px;
+}
+#kappale1{
+    font-size: 18px;
+    font-family: monospace;
+    letter-spacing: 1rem;
+    padding: 5px;
+    margin-right: -30px;
+}
+
+#kappale2{
+    color: rgb(147, 216, 243);
+    font-family: serif;
+    letter-spacing: 1rem;
+    margin-left: -10px;
+}
+
+#kappale2 .magenta{
+    background-color: rgb(155, 66, 155);
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding:5px;
+}
+figure, p{
+    text-align: left;
+    margin-left:50px;
+    padding: 10px;
+}
+
+@keyframes bluecolor{
+    0% {
+        margin-top: -200px;
+    }
+    100% {
+        margin-bottom: 75px;
+    }
+}
+@keyframes greencolor{
+    0% {
+        margin-left: -100px;
+    }
+    100%{
+        margin-bottom: 75px;
+    
+    }
+}
