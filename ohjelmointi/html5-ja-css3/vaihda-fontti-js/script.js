@@ -8,19 +8,19 @@ function changeFontSize(){
     size = size + 1;
     lista = document.getElementById('lista');
     if (size == 1) {
-        lista.style.fontSize = "20px";
+        lista.size.fontSize = "20px";
     }
     else if (size = 2) {
-        lista.style.fontSoze = "24px";
+        lista.size.fontSoze = "24px";
     }
     else if (size =3) {
-        lista.style.fontSoze = "28px";
+        lista.size.fontSoze = "28px";
     }
     else if (size = 4) {
-        lista.style.fontSoze = "32px";
+        lista.size.fontSoze = "32px";
     }
     else if (size = 5) {
-        lista.style.fontSoze = "20px";
+        lista.size.fontSoze = "20px";
     }
 
 }
