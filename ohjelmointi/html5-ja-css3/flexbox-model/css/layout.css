@@ -44,7 +44,7 @@ html{
 }
 
 .parent2 .color-blue{
-flex-grow: 2;
+    flex-grow: 2;
 }
 
 .parent3 {
