@@ -1,30 +1,34 @@
 
 var size = 0;
-function changeFontSize(){
+
+function changeFontSize() {
     if (size == 6) {
         size = 1;
     }
-    console.log("changeFontSize, size: " + size);
+
     size = size + 1;
-    lista = document.getElementById('lista');
+    lista_li = document.getElementById("lista");
     if (size == 1) {
-        lista.size.fontSize = "20px";
+        lista_li.style.fontSize = "20px";
     }
-    else if (size = 2) {
-        lista.size.fontSoze = "24px";
+
+    else if (size == 2) {
+        lista_li.style.fontSize = "24px";
     }
-    else if (size =3) {
-        lista.size.fontSoze = "28px";
+
+    else if (size == 3) {
+        lista_li.style.fontSize = "28px";
     }
-    else if (size = 4) {
-        lista.size.fontSoze = "32px";
+
+    else if (size == 4) {
+        lista_li.style.fontSize = "32px";
     }
-    else if (size = 5) {
-        lista.size.fontSoze = "20px";
+
+    else if (size == 5) {
+        lista_li.style.fontSize = "20px";
     }
 
 }
-
 
 var type = 0;
 console.log("");
