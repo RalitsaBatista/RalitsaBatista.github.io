@@ -12,8 +12,8 @@ myImage.onclick = function () {
     if (!localStorage.getItem('name')) {
       setUserName();
     } else {
-      let storedName = localStorage.getItem('name');
-      myHeading.textContent = 'Mozilla is cool, ' + storedName;
+      let displayName = localStorage.getItem('name');
+      myHeading.textContent = 'Mozilla is cool, ' + displayName;
     }
   }
 }
@@ -23,19 +23,19 @@ let myHeading = document.querySelector('h1');
 
 function setUserName() {
   let myName = prompt('Please enter your name.');
-  if (!myName) {
-    setUserName();
-  } else {
+  console.log(myName.length);
+  if (myName !== null && myName.length > 0) {
     localStorage.setItem('name', myName);
     myHeading.innerHTML = 'Mozilla is cool, ' + myName;
+  } else {
+    setUserName();
   }
 }
-
 if (!localStorage.getItem('name')) {
   setUserName();
 } else {
-  let storedName = localStorage.getItem('name');
-  myHeading.textContent = 'Mozilla is cool, ' + storedName;
+  let displayName = localStorage.getItem('name');
+  myHeading.textContent = 'Mozilla is cool, ' + displayName;
 }
 
 myButton.onclick = function () {
@@ -43,6 +43,6 @@ myButton.onclick = function () {
 }
 function Return(x) {
   const myHeading = document.querySelector('h1');
-  let storedName = localStorage.getItem('name');
-  myHeading.textContent = 'Mozilla is cool, ' + storedName;
+  let displayName = localStorage.getItem('name');
+  myHeading.textContent = 'Mozilla is cool, ' + displayName;
 }

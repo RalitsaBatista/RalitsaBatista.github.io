@@ -1,36 +1,33 @@
 var size = 0;
-
-function changeFontSize() {
-    if (size == 6) {
-        size = 1;
-    }
-
-    size = size + 1;
+const fontSizes = [20,24,28,32];
+function changeFontSize() {    
+    
     lista = document.getElementById("lista");
-    if (size == 1) {
-        lista.style.fontSize = "20px";
-    }
+    lista.style.fontSize = fontSizes[size]+"px";
 
-    else if (size == 2) {
-        lista.style.fontSize = "24px";
-    }
-
-    else if (size == 3) {
-        lista.style.fontSize = "28px";
-    }
-
-    else if (size == 4) {
-        lista.style.fontSize = "32px";
-    }
-
-    else if (size == 5) {
-        lista.style.fontSize = "20px";
+    if(size>=fontSizes.length-1){
+        size = 0;
+    } else {
+        size++;
     }
 }
 
 var type = 0;
-console.log("");
+const fontTypes = ["Roboto, sans-serif","Mansalva, cursive","Grenze, serif","Turret Road, cursive","Courier New"];
 function changeFontStyle() {
+
+    lista = document.getElementById("lista");
+    lista.style.fontFamily = fontTypes[type];
+
+    if(type>=fontTypes.length-1){
+        type = 0;
+    } else {
+        type++;
+    }
+}
+
+
+function changeFontStyle111() {
     if(type == 6){
         type = 1;
     }
