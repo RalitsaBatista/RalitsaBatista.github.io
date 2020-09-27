@@ -1,4 +1,3 @@
-
 var size = 0;
 
 function changeFontSize() {
@@ -7,27 +6,26 @@ function changeFontSize() {
     }
 
     size = size + 1;
-    lista_li = document.getElementById("lista");
+    lista = document.getElementById("lista");
     if (size == 1) {
-        lista_li.style.fontSize = "20px";
+        lista.style.fontSize = "20px";
     }
 
     else if (size == 2) {
-        lista_li.style.fontSize = "24px";
+        lista.style.fontSize = "24px";
     }
 
     else if (size == 3) {
-        lista_li.style.fontSize = "28px";
+        lista.style.fontSize = "28px";
     }
 
     else if (size == 4) {
-        lista_li.style.fontSize = "32px";
+        lista.style.fontSize = "32px";
     }
 
     else if (size == 5) {
-        lista_li.style.fontSize = "20px";
+        lista.style.fontSize = "20px";
     }
-
 }
 
 var type = 0;

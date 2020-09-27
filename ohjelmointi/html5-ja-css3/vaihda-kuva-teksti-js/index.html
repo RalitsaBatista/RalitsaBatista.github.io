@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vaihda kuva ja teksti JavaScriptillä</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/layout.css">
-    <script></script>
+    <link rel="stylesheet" text="text/css" href="css/layout.css">
+    <script src="scripts/script.js"></script>
 </head>
 <body>
     <h1>Mozilla is cool, <br> Ralitsa Batista</h1>
-    <img src="img/firefox-icon.png" alt="The Firefox logo">
-    <button>Change user</button>
+    <img id="firefox" src="img/firefox-icon.png" alt="The Firefox logo">
+    <button type="button" onClick="setUserName()">Change user</button>
+    
     <p>At Mozilla, we're a global community of</p>
-    <ul class="lista">
+    <ul display="lista">
         <li>technologists</li>
         <li>thinkers</li>
         <li>builders</li>
@@ -22,7 +22,6 @@
     <p>Read the 
         <a href="https://www.mozilla.org/en-US/about/manifesto/">Mozilla Manifesto</a> to learn even more about the values and principles that guide the pursuit of our mission.
     </p>
-    
-    <script src="script.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
