@@ -17,11 +17,13 @@ h1 {
     color: #00539F;
     text-shadow: 3px 3px 1px black;
     font-size: 60px;
+    margin-left: 1.5em;
 }
 #firefox {
     display: block;
     max-width: 100%;
     background-color: orange;
+    padding-left: 16em;
 }
 
 p, li {

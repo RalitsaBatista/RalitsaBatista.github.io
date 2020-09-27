@@ -1,14 +1,14 @@
-/*let myImage = document.querySelector('img');
+let myImage = document.querySelector('img');
 
 myImage.onclick = function () {
   let mySrc = myImage.getAttribute('src');
-  if (mySrc === 'images/firefox-logo.png') {
-    myImage.setAttribute('src', 'images/brave-logo.png');
-    document.body.style.background = 'rgb(255, 255, 255)';
+  if (mySrc === 'img/firefox.png') {
+    myImage.setAttribute('src', 'img/brave.png');
+    document.body.style.background = 'rgb(255, 255, 255';
     myHeading.textContent = 'Is Brave even cooler?';
   } else {
-    myImage.setAttribute('src', 'images/firefox-logo.png');
-    document.body.style.background = '#FF9500';
+    myImage.setAttribute('src', 'img/firefox.png');
+    document.body.style.background = '#fca42a';
     if (!localStorage.getItem('name')) {
       setUserName();
     } else {
@@ -41,15 +41,8 @@ if (!localStorage.getItem('name')) {
 myButton.onclick = function () {
   setUserName();
 }
-
-function Hello(x) {
-  const myHeading = document.querySelector('h1');
-  myHeading.textContent = 'Hello World!';
-}
-
 function Return(x) {
   const myHeading = document.querySelector('h1');
   let storedName = localStorage.getItem('name');
   myHeading.textContent = 'Mozilla is cool, ' + storedName;
-}*/
-
+}
