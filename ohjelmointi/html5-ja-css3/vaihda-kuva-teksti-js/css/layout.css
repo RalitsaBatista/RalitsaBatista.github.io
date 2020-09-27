@@ -23,7 +23,7 @@ h1 {
     display: block;
     max-width: 100%;
     background-color: orange;
-    padding-left: 16em;
+    margin-left: 16em;
 }
 
 p, li {
