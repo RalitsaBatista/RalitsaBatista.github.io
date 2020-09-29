@@ -5,6 +5,10 @@
     margin-bottom: 0;
     background-color: #fff;
   }
+  image {
+    width: 350px;
+    height: 350px;
+  }
   @media (min-width: 768px) {
     .jumbotron {
       padding-top: 6rem;
