@@ -1,6 +1,4 @@
-html{
-    font-size: 62.5%;
-}
+
 .jumbotron {
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -13,7 +11,7 @@ html{
       padding-bottom: 6rem;
     }
   }
-  
+
   .jumbotron p:last-child {
     margin-bottom: 0;
   }
@@ -36,7 +34,7 @@ html{
   }
 
   .bd-placeholder-img {
-    font-size: 1.125rem;
+    font-size: 3.5rem;
     text-anchor: middle;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -57,23 +55,17 @@ html{
     width: 100%;
   }
 
-  .image {
-    width: 500px;
-    height: 500px;
-  }
-
   .col-lg-4 {
     padding: 10px;
   }
 
-   @media screen and (min-width: 320px) and (max-width: 425px) {
+   @media screen and (max-width: 425px) {
      .carousel-caption {
        display: none;
      }
+     figure img {
+        display: block;
+        max-width: 100%;
+      }
    }
 
-   @media (min-width: 768px) {
-    .bd-placeholder-img-lg {
-      font-size: 3.5rem;
-    }
-  } 
