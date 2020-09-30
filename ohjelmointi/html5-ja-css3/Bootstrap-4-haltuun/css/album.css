@@ -1,12 +1,7 @@
-.jumbotron {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  margin-bottom: 0;
-  background-color: #fff;
-}
-image {
-  width: 348px;
-  height: 350px;
+
+.albumimg {
+  height: 240px;
+  width: 288px;
 }
 
 /*tablet*/

@@ -11,14 +11,13 @@ body {
   -webkit-animation: chartjs-render-animation 0.001s;
   animation: chartjs-render-animation 0.001s;
 }
-.table {
-  width: 100%;
-  margin-bottom: 1rem;
-  color: #212529;
-}
+
+/*
+ * Sidebar
+ */
 
 .sidebar {
-  position: fixed;
+  /*position: fixed;  //täällä korjattiin, ettei sidebar oo sivussa*/ 
   top: 0;
   bottom: 0;
   left: 0;
@@ -26,18 +25,10 @@ body {
   padding: 48px 0 0; /* Height of navbar */
   box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
 }
-.bg-placeholder-img {
-  text-anchor: middle;
-}
 
-/**/
 @media (max-width: 767.98px) {
   .sidebar {
     top: 5rem;
-  }
-  figure img {
-    display: block;
-    max-width: 100%;
   }
 }
 
@@ -81,6 +72,10 @@ body {
   text-transform: uppercase;
 }
 
+/*
+ * Navbar
+ */
+
 .navbar-brand {
   padding-top: .75rem;
   padding-bottom: .75rem;
@@ -109,18 +104,4 @@ body {
 .form-control-dark:focus {
   border-color: transparent;
   box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
-}
-
-/*mobile*/
-@media screen and (min-width: 320px) and (max-width: 425px){
-
-}
-
-@keyframes chartjs-render-animation{
-  0%{
-    opacity: 0.99;
-  }
-  100%{
-    opacity: 1;
-  }
 }
