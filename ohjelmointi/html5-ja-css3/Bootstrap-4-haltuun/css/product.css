@@ -25,10 +25,6 @@ img{
   border-radius: 21px 21px 0 0;
 }
 
-/*
- * Dummy devices (replace them with your own or something else entirely!)
- */
-
 .product-device {
   position: absolute;
   right: 10%;
@@ -64,7 +60,6 @@ img{
   height: 540px;
 }
 
-
 /*
  * Extra utilities
  */
@@ -73,6 +68,10 @@ img{
   -ms-flex: 1;
   flex: 1;
 }
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
 @media (min-width: 768px) {
   .flex-md-equal > * {
     -ms-flex: 1;

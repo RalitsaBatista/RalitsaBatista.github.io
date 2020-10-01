@@ -9,10 +9,12 @@ body {
 }
 
 
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
 /* Carousel base class */
-.carousel {
+.carousel-container {
   margin-bottom: 4rem;
-  width: 100%;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -30,7 +32,6 @@ body {
   left: 0;
   min-width: 100%;
   height: 32rem;
-  vertical-align: middle;;
 }
 
 

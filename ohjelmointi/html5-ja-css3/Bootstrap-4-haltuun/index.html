@@ -7,16 +7,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap 4 haltuun</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.css">
-    <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/product.css">
     <link rel="stylesheet" href="css/pricing.css">
     <link rel="stylesheet" href="css/album.css">
     <link rel="stylesheet" href="css/carousel.css">
-    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/layout.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.js"></script>
-  
+    <script type="text/javascript">window.onload = function () {
+        var chart = new CanvasJS.Chart("chartContainer", {
+            data: [              
+            {
+                type: "line",
+                dataPoints: [
+                    { label: "Sunday",  y: 10  },
+                    { label: "Monday", y: 15  },
+                    { label: "Tuesday", y: 25  },
+                    { label: "Wednesday",  y: 30  },
+                    { label: "Thursday",  y: 28  },
+                    { label: "Friday",  y: 28  },
+                    { label: "Saturday",  y: 28  }
+                ]
+            }
+            ]
+        });
+        chart.render();
+    }</script>
     <style>
         .bd-placeholder-img {
             font-size: 1.125rem;
@@ -25,6 +42,19 @@
             -moz-user-select: none;
             -ms-user-select: none;
             user-select: none;
+        }
+        img{
+            width: 350px;
+            height: 300px;
+        }
+        .navbar-dark .navbar-brand {
+            color: #fff;
+            background-color: #343a40;
+        }
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
         }
     </style>
 </head>
@@ -438,7 +468,7 @@
             </div>
         </div>
         <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-            <div class="mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" style="background-color: rgb(72, 194, 72);">
+            <div class="bg-success mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
                 <div class="my-3 p-3">
                     <h2 class="display-5">Another headline</h2>
                     <p class="lead">And an even wittier subheading.</p>
@@ -448,7 +478,7 @@
                     <img style="width: 500px; height: 300px; border-radius: 21px 21px 0 0; margin-left: -200px;" src="img/7.jpg" alt="">
                 </div>
             </div>
-            <div class="mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" style="background-color: rgb(209, 26, 26);">
+            <div class="bg-danger mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
                 <div class="my-3 py-3">
                     <h2 class="display-5">Another headline</h2>
                     <p class="lead">And an even wittier subheading.</p>
@@ -460,7 +490,7 @@
             </div>
         </div>
         <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-            <div class="mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" style="background-color: rgb(247, 192, 12);">
+            <div class="bg-warning mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
                 <div class="my-3 p-3">
                     <h2 class="display-5">Another headline</h2>
                     <p class="lead">And an even wittier subheading.</p>
@@ -470,7 +500,7 @@
                     <img style="width: 500px; height: 300px; border-radius: 21px 21px 0 0; margin-left: -200px;" src="img/9.jpg" alt="">
                 </div>
             </div>
-            <div class="mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" style="background-color: rgb(58, 173, 202);">
+            <div class="bg-info mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
                 <div class="my-3 py-3">
                     <h2 class="display-5">Another headline</h2>
                     <p class="lead">And an even wittier subheading.</p>
@@ -857,24 +887,24 @@
         <h1>Carousel</h1>
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class=""></li>
-                <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item">
-                    <img class="carousel" src="img/bootimg.jpg">
-                    <div class="container">
+                    <figure><img class="carousel" src="img/bootimg.jpg"></figure>
+                    <div class="carousel-container">
                         <div class="carousel-caption text-left">
                             <h1>Example headline.</h1>
-                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
-                                gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi portagravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                             <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item carousel-item-next carousel-item-left">
-                    <img class="carousel" src="img/Bootimg-2.jpg">
+                <div class="carousel-item active">
+
+                    <figure><img class="carousel" src="img/Bootimg-2.jpg"></figure>
                     <div class="carousel-container">
                         <div class="carousel-caption">
                             <h1>Another example headline.</h1>
@@ -884,7 +914,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item active">
+                <div class="carousel-item">
                     <img class="carousel" src="img/bootimg-3.jpg">
                     <div class="carousel-container">
                         <div class="carousel-caption text-right">
@@ -948,46 +978,11 @@
     </main>
     </div>  
     <script src="script/dashboard.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.js"></script>   
-    <script>
-        // <![CDATA[  <-- For SVG support
-        if ('WebSocket' in window) {
-            (function () {
-                function refreshCSS() {
-                    var sheets = [].slice.call(document.getElementsByTagName("link"));
-                    var head = document.getElementsByTagName("head")[0];
-                    for (var i = 0; i < sheets.length; ++i) {
-                        var elem = sheets[i];
-                        var parent = elem.parentElement || head;
-                        parent.removeChild(elem);
-                        var rel = elem.rel;
-                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-                        }
-                        parent.appendChild(elem);
-                    }
-                }
-                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-                var address = protocol + window.location.host + window.location.pathname + '/ws';
-                var socket = new WebSocket(address);
-                socket.onmessage = function (msg) {
-                    if (msg.data == 'reload') window.location.reload();
-                    else if (msg.data == 'refreshcss') refreshCSS();
-                };
-                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-                    console.log('Live reload enabled.');
-                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-                }
-            })();
-        }
-        else {
-            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-        } 
-    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>')
+    </script><script src="script/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
 </body>
 
