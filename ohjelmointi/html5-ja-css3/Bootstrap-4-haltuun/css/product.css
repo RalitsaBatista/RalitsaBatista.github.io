@@ -75,10 +75,9 @@ img{
 @media (min-width: 768px) {
   .flex-md-equal > * {
     -ms-flex: 1;
+    -webkit-box-flex: 1;
     flex: 1;
   }
+}
 
-.overflow-hidden { 
-  overflow: hidden; 
-}
-}
+.overflow-hidden { overflow: hidden; }

@@ -7,7 +7,32 @@ figure img {
 .display-4 {
   z-index: 4;
 }
+.thumbnail {
+  height: 240px;
+}
+.carousel-image {
+  width: 100%;
+}
 
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .carousel-caption {
+    display: none;
+  }
+  .carousel-caption h1 {  
+    bottom: 400px;
+    color: black; 
+}
+
+.carousel-caption p {
+    color: black;
+  }
+}
+
+@media (min-width: 768px) {
+ .bd-placeholder-img-lg {
+   font-size: 3.5rem;
+ }
+} 
  
 @media (max-width: 786px) {
  
@@ -16,17 +41,5 @@ figure img {
   }
 }
 
-  @media (max-width: 425px) {
-      .carousel-caption h1 {
-        
-          bottom: 400px;
-          color: black; 
-      }
-
-      .carousel-caption p {
-          color: black;
-      }
-  }
-
-
+ 
 
