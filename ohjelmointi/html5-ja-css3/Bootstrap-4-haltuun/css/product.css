@@ -3,6 +3,7 @@
 }
 img{
   margin-right: 120px;
+  max-width: 100%;
 }
 /*
  * Custom translucent site header
