@@ -17,5 +17,7 @@
     "webpack-cli": "^4.1.0"
   },
   "main": "index.js",
-  "dependencies": {}
+  "dependencies": {
+    "lodash": "^4.17.20"
+  }
 }
