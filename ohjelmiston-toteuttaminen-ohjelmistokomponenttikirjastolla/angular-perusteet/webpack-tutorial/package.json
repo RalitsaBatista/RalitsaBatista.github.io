@@ -1,20 +1,31 @@
 {
-  "name": "webpack-tutorial",
+  "name": "development",
   "version": "1.0.0",
-  "description": "webpack-tutorial",
+  "description": "",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch",
+    "start": "webpack-dev-server --open",
+    "server": "node server.js",
+    "build": "webpack"
   },
-  "keywords": [
-    "webpack",
-    "tutorial"
-  ],
+  "keywords": [],
   "author": "Ralitsa Batista",
   "license": "ISC",
   "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^5.0.0",
+    "csv-loader": "^3.0.3",
+    "express": "^4.17.1",
+    "file-loader": "^6.1.1",
+    "html-webpack-plugin": "^4.5.0",
+    "style-loader": "^2.0.0",
     "webpack": "^5.1.3",
-    "webpack-cli": "^4.1.0"
+    "webpack-cli": "^4.1.0",
+    "webpack-dev-middleware": "^3.7.2",
+    "webpack-dev-server": "^3.8.0",
+    "xml-loader": "^1.2.1"
   },
   "main": "index.js",
   "dependencies": {
