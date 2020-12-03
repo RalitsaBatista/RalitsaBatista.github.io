@@ -1,8 +1,14 @@
-<section class= "app-servers">
-    <h1>I'm in the Servers Component</h1>
-   <button [disabled] = "allowNewServer" class="btn btn-primary">Add Server</button>>
-   <p>{{ allowNewServer }} - string interpolation on p-tagin sisällä, tämä näkyy selaimessa...</p> <!--string interpolation -->
-   <p [innerHTML] = "allowNewServer"> tämä sen sijaan ei näy selaimessa</p> <!--property pinding-->
+<section class="app-servers">
+    <label>Server name is {{ serverName }}</label>
+  <input 
+    type="text"
+    class="form-control black"
+    (input)="onUpdateServerName($event)">
+   <button 
+   class="btn btn-primary"
+   [disabled] = "!allowNewServer" 
+   (click)="onCreateServer()">Add Server</button>
+   <p class="sisennys">{{ serverCreationStatus }}</p> 
     <app-server></app-server>
    </section>
 

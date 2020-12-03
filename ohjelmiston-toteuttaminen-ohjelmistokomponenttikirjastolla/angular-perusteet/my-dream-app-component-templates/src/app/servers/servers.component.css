@@ -4,3 +4,6 @@
 .app-servers * {
     color: bisque;
 }
+.black {
+    color: black !important;
+}
