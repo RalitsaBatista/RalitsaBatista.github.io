@@ -1,0 +1,17 @@
+<section>
+    <label>User name</label>
+
+    <input 
+        type="text"
+        class="form-control"
+        {[ngModule]}="userName";>
+<button>
+    class="btn btn-primary"
+    [disabled] = "!allowNewUser"
+    (click) = "onCreateUser()">Add User</button>
+    <p class="sisennys">{{ usernameCreationStatus }}</p> 
+
+<app-username-check></app-username-check>
+                 <!--traget       source(property from parent)    
+               property from child-->
+</section>
