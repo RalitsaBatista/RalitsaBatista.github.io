@@ -1,0 +1,33 @@
+[debug] [2020-12-16T12:46:10.916Z] ----------------------------------------------------------------------
+[debug] [2020-12-16T12:46:10.919Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\s2000574\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-12-16T12:46:10.919Z] CLI Version:   9.0.0
+[debug] [2020-12-16T12:46:10.919Z] Platform:      win32
+[debug] [2020-12-16T12:46:10.919Z] Node Version:  v14.15.1
+[debug] [2020-12-16T12:46:10.920Z] Time:          Wed Dec 16 2020 14:46:10 GMT+0200 (Eastern European Standard Time)
+[debug] [2020-12-16T12:46:10.920Z] ----------------------------------------------------------------------
+[debug] [2020-12-16T12:46:10.920Z] 
+[debug] [2020-12-16T12:46:10.925Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-12-16T12:46:10.926Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  c:\Tiedostot\portfolio\ohjelmiston-toteuttaminen-ohjelmistokomponenttikirjastolla\angular-perusteet\sovella-databindingia
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
