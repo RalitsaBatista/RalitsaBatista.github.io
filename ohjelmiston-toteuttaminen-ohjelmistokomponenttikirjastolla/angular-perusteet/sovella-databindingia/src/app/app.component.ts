@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   currentUser = 'New User';
+  title = "sovella-databindingia";
 }

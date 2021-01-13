@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class UsernameComponent implements OnInit{
     allowNewUser:boolean = false;
     usernameCreationStatus = "No username was created!";
-    username: string = 'Testusername'; 
+    username: string = 'TestUserName'; 
 
 
 constructor(){
