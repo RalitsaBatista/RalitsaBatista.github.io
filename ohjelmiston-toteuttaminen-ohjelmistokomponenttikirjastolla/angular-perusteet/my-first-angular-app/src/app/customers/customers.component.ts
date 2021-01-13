@@ -5,8 +5,8 @@ import { Component, OnInit } from '@angular/core';
     templateUrl: './customers.component.html'
 })
 export class CustomersComponent implements OnInit {
-    title: string;
-    people: any[];
+    title!: string;
+    people: any[] = [];
     
     constructor() {}
     

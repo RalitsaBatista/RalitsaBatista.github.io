@@ -8,7 +8,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class FilterTextboxComponent implements OnInit {
     
-    private _filter: string;
+    private _filter!: string;
     @Input() get filter() {
         return this._filter;
     }

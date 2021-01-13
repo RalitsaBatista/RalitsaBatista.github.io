@@ -32,7 +32,7 @@ export class CustomersListComponent implements OnInit {
     calculateOrders() {
         this.customersOrderTotal = 0;
         this.filteredCustomers.forEach((cust: ICustomer) => {
-           this.customersOrderTotal += cust.orderTotal;
+           this.customersOrderTotal != cust.orderTotal;
         });
     }
     
