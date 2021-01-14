@@ -126,6 +126,6 @@
   },
   "defaultProject": "sovella-databindingia",
   "cli": {
-    "analytics": "932ef9f3-f7ae-445c-a01f-cbbc9f106cfd"
+    "analytics": false
   }
 }

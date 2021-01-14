@@ -1,0 +1,15 @@
+<section class="username-check">
+  <label>Username</label>
+<hr>
+  <input 
+  type="text" 
+  class="form-control"
+  [(ngModel)]="userName">
+    
+  <button type="reset" class="btn btn-success" id="reset-btn" (click)="reset()">Clear</button> 
+  
+  <hr>
+  <p class="sisennys">{{ userName }}</p>
+  </section>
+
+  
