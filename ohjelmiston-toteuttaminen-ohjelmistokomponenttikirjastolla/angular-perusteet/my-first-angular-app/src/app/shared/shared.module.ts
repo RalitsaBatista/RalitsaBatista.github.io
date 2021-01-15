@@ -4,6 +4,6 @@ import { CapitalizePipe } from './capitalize.pipe';
 
 @NgModule({
     declarations: [ CapitalizePipe ],
-    exports: [  ]
+    exports: [ CapitalizePipe  ]
 })
 export class SharedModule { }
