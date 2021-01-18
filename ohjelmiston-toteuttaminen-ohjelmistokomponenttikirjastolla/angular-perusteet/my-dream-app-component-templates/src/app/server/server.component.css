@@ -1,6 +1,9 @@
-section {
+.app-server {
     background-color: blue;
 }
-h1 {
+.app-server * {
     color: bisque;
+}
+.online {
+    border: 5px bisque double;
 }
