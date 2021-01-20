@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <button class="btn btn-primary" (click)="onShowDisplay()">Display Details</button>  
+            
+          <br><br>
+          <ol class="list-detail">
+              <li
+              class="list-detail-item"
+              *ngFor="let detail of details; let i = index" 
+              (click)= "onRemoveDetail(i)">{{ details }}
+
+              </li>
+
+          </ol>
+
+
+                <!-- -->
+        
+        </div>
+    </div>
+</div>

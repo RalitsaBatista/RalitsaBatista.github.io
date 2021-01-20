@@ -1,7 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
-    selector: 'app-filter-textbox',
+    selector: 'filter-textbox',
     template: `
         Filter: <input type="text" [(ngModel)]="filter" />
     `
