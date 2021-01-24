@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "tuoteluettelo"
+  "defaultProject": "tuoteluettelo",
+  "cli": {
+    "analytics": false
+  }
 }
