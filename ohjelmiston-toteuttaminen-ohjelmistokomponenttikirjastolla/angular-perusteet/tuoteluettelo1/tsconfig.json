@@ -9,7 +9,10 @@
     "downlevelIteration": true,
     "experimentalDecorators": true,
     "moduleResolution": "node",
-    "importHelpers": true,
+    "importHelpers": true,    
+    "resolveJsonModule":true,
+    "esModuleInterop":true,
+    "allowSyntheticDefaultImports":true,
     "target": "es2015",
     "module": "es2020",
     "lib": [

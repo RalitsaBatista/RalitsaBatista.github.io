@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "site": "angular-debugging-f4536",
+    "public": "dist/my-first-app",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
