@@ -10,7 +10,7 @@ import { SorterService } from '../../core/sorter.service';
 export class CustomersListComponent implements OnInit {
     private _customers: ICustomer[] = [];
     @Input() get customers(): ICustomer[] {
-        return this._customers
+        return this._customers;
     }
     
     set customers(value: ICustomer[]) {
@@ -20,8 +20,8 @@ export class CustomersListComponent implements OnInit {
         }
     }
 
-    filteredCustomers: any;
-    customersOrderTotal: number = 0;
+    filteredCustomers: any[] = [];
+    customersOrderTotal!: number;
     currencyCode: string = 'USD';
     
     constructor(private sorterService: SorterService) {}

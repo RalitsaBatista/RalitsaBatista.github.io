@@ -11,7 +11,7 @@
     </thead>
     <tr *ngFor="let cust of filteredCustomers">
         <td>
-            <a [routerLink]="['orders', cust.id]">
+            <a>
                 {{ cust.name | capitalize }}
             </a>
         </td>

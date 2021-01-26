@@ -1,7 +1,7 @@
 {
   "hosting": {
-    "site": "tour-of-heroes-1a8f5",
-    "public": "dist/angular-tour-of-heroes",
+    "site": "my-first-angular-app-d009d",
+    "public": "dist/my-first-angular-app",
     "ignore": [
       "firebase.json",
       "**/.*",
