@@ -1,0 +1,20 @@
+<h4>Product Details</h4>
+
+<div class="card p-3 mb-5" *ngIf="product">
+  <img [src]="product.imgUrl" class="img-fluid p-5"/>
+  <h3>{{ product.name }}</h3>
+  <h4>{{ product.price | currency }}</h4>
+  <p>{{ product.description }}</p>
+
+  <button 
+  (click)="addToCart(product)" 
+  class="btn btn-dark"> Add to Cart
+  </button>
+
+  <div class="pt-2">
+    <app-backbtn></app-backbtn>
+  </div>
+  
+
+</div>
+

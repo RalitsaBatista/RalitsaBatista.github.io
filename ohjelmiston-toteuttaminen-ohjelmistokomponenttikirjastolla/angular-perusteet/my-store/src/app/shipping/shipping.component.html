@@ -1,0 +1,8 @@
+<h5>Shipping Prices</h5>
+
+<a routerLink="/cart">Back</a>
+<div class="shipping-item bg-light p-3" *ngFor="let shipping of shippingCosts | async">
+  <span style="min-width: 50px;">{{ shipping.type }}</span>
+  <span class="ml-2">{{ shipping.price | currency }}</span>
+    <hr>
+</div> 

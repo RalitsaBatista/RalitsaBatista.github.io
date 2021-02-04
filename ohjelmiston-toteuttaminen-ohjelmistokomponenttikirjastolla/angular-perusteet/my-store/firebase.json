@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "site": "my-store-d",
+    "public": "dist/my-store",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+/* Add application styles & imports to this file! */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans&display=swap');
+
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Montserrat', sans-serif;
+}
+p {
+  font-family: 'Open Sans', sans-serif;
+  padding: 10px;
+}
+
+btn-primary {
+  background-color: #1976D2 !important;
+}
+primary {
+  color:#1976D2 !important;
+}
