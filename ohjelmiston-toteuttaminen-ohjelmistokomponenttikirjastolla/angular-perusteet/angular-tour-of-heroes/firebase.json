@@ -1,7 +1,7 @@
 {
   "hosting": {
-    "site": "tour-of-heroes-1r",
-    "public": "dist/tour-of-heroes",
+    "site": "tour-of-heroes-3r",
+    "public": "dist",
     "ignore": [
       "firebase.json",
       "**/.*",
